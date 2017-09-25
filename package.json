@@ -1,0 +1,26 @@
+{
+  "name": "scovill-mailchimp",
+  "version": "1.0.0",
+  "description": "MailChimp email marketing templates for Scovill Fasteners",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurenhamel/scovill-mailchimp.git"
+  },
+  "keywords": [
+    "scovill fasteners",
+    "mailchimp",
+    "email marketing",
+    "marketing"
+  ],
+  "author": "Lauren Hamel",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/laurenhamel/scovill-mailchimp/issues"
+  },
+  "homepage": "https://github.com/laurenhamel/scovill-mailchimp#readme"
+}
