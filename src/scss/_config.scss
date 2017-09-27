@@ -1,0 +1,21 @@
+/* COLORS */
+
+$color-blue:          #00306A;
+$color-gray:          #E4E4E4;
+$color-grey:          #E4E4E4;
+
+$color-text-dark:     #333333;
+$color-text-light:    #F4F4F4;
+
+/* FONTS */
+$font-body:           Trebuchet, sans-serif;
+$font-heading:        Trebuchet, sans-serif;
+
+/* LAYOUT */
+
+$layout-max-width: 640px;
+
+/* BREAKPOINTS */
+
+$breakpoint-mobile: 400px;
+$breakpoint-tablet: $layout-max-width;

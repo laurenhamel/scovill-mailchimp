@@ -1,0 +1,49 @@
+/**
+ * @tab       Postfooter
+ * @section   Background
+ * @tip       Set the background color for the email's postfooter area.
+ */
+#postfooter {
+  width: 100%;
+  /*@editable*/ background-color: transparent;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Border
+ * @tip       Set the border style for the email's postfooter area.
+ */
+#postfooter {
+  /*@editable*/ border-top: none;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Text
+ * @tip       Set the text style for the email's postfooter.
+ */
+#postfooter .content {
+  /*@editable*/ color: #808080;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 10px;
+  /*@editable*/ line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/ text-align: justify;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Links
+ * @tip       Set the link styles for your postfooter.
+ */
+#footer .content a, 
+#footer .content a:visited, 
+#footer .content a .yshortcuts, 
+#footer .content a span {
+  /*@editable*/ color: #606060;
+  /*@editable*/ font-weight: normal;
+  /*@editable*/ text-decoration: underline;
+}

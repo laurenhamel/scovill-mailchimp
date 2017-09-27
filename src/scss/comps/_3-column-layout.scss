@@ -1,0 +1,67 @@
+/**
+ * @tab       3-Column
+ * @section   Background
+ * @tip       Set the background color for the email's 3-column area.
+ */
+.cols-3 {
+  width: 100%;
+  /*@editable*/ background-color: #F4F4F4;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Border
+ * @tip       Set the border style for the email's 3-column area.
+ */
+.cols-3 {
+  /*@editable*/ border-top: 1px solid #FFFFFF;
+  /*@editable*/ border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Column
+ * @tip       Set the column style for the email's 3-column area.
+ */
+.cols-3 .column {
+  width: (100% / 3); 
+  max-width: (100% / 3); 
+  /*@editable*/ padding-top: 20px;
+  /*@editable*/ padding-bottom: 20px;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Text
+ * @tip       Set the text style for your email's column content text.
+ */
+.cols-3 .column .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 14px;
+  /*@editable*/ line-height: 150%;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/ text-align: left;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Links
+ * @tip       Set the link styles for your email's column content text.
+ */
+.cols-3 .column .content a, 
+.cols-3 .column .content a:visited, 
+.cols-3 .column .content a .yshortcuts {
+  /*@editable*/ color: $color-blue;
+  /*@editable*/ font-weight: normal;
+  /*@editable*/ text-decoration: underline;
+}
+
+.cols-3 .column img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+}

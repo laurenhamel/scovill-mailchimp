@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  
+  <title>*|MC:SUBJECT|*</title>
+  
+  <style>/* CONFIGURATIONS */
+/* COLORS */
+/* FONTS */
+/* LAYOUT */
+/* BREAKPOINTS */
+/* CLIENT NORMALIZATION */
+/* OUTLOOK */
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* OSX / iOS */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* WINDOWS MOBILE */
+body {
+  -ms-text-size-adjust: 100%;
+}
+
+/* BROWSER NORMALIZATION */
+body,
+#body {
+  font-family: sans-serif;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  display: block;
+  margin: .25em 0 .5em;
+}
+
+/* EMAIL COMPONENTS */
+#wrapper {
+  padding: 20px;
+}
+
+#template {
+  max-width: 640px;
+}
+
+/**
+ * @tab       Page
+ * @section   Background
+ * @tip       Set the background color of the email.
+ * @theme     Page
+ */
+body,
+#body {
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab       Page
+ * @section   Border
+ * @tip       Set the border around the email.
+ */
+#template {
+  /*@editable*/
+  border: none;
+}
+
+/**
+ * @tab       Page
+ * @section   Fonts
+ * @tip       Set body styles for the email.
+ * @theme     body
+ */
+body,
+#body {
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  color: #333333;
+  /*@editable*/
+  line-height: 100%;
+}
+
+/**
+ * @tab       Page
+ * @section   Links
+ * @tip       Set link styles for the email.
+ */
+a,
+a:visted {
+  /*@editable*/
+  color: #00306A;
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 1
+ * @tip       Set the style for first-level headings.
+ * @style     Heading 1
+ */
+h1 {
+  /*@editable*/
+  color: #333333 !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 26px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 2
+ * @tip       Set the style for second-level headings.
+ * @style     Heading 2
+ */
+h2 {
+  /*@editable*/
+  color: #404040 !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 3
+ * @tip       Set the style for third-level headings.
+ * @style     Heading 3
+ */
+h3 {
+  /*@editable*/
+  color: #606060 !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  font-style: italic;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 4
+ * @tip       Set the style for fourth-level headings.
+ * @style     Heading 4
+ */
+h4 {
+  /*@editable*/
+  color: #808080 !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  font-style: italic;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Preheader
+ * @section   Background
+ * @tip       Set the background color for the email's preheader.
+ * @theme     header
+ */
+#preheader {
+  width: 100%;
+  /*@editable*/
+  background-color: #F4F4F4;
+}
+
+/**
+ * @tab       Preheader
+ * @section   Border
+ * @tip       Set the bottom border of the email's preheader.
+ */
+#preheader {
+  /*@editable*/
+  border-bottom: 1px solid #FFFFFF;
+  /*@editable*/
+  border-top: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab        Preheader
+ * @section    Text
+ * @tip        Set the text styles for the email's preheader.
+ */
+#preheader .content {
+  /*@editable*/
+  color: #808080;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 125%;
+  /*@editable*/
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+/**
+ * @tab        Preheader
+ * @section    Links
+ * @tip        Set the link styles for the email's preheader.
+ */
+#preheader .content a,
+#preheader .content a:visited,
+#preheader .content a .yshortcuts {
+  /*@editable*/
+  color: #606060;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+#preheader .content:last-of-type {
+  text-align: right;
+}
+
+/**
+ * @tab        Header
+ * @section    Background
+ * @tip        Set the background color for your email's header area.
+ * @theme      header
+ */
+#header {
+  width: 100%;
+  /*@editable*/
+  background-color: #F4F4F4;
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab        Header
+ * @section    Background
+ * @tip        Set the border for your email's header area.
+ * @theme      header
+ */
+#header {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Header
+ * @section   Text
+ * @tip       Set the text styles for the email's header.
+ */
+#header .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  padding-top: 0;
+  /*@editable*/
+  padding-right: 0;
+  /*@editable*/
+  padding-bottom: 0;
+  /*@editable*/
+  padding-left: 0;
+  /*@editable*/
+  text-align: left;
+  /*@editable*/
+  vertical-align: middle;
+}
+
+/**
+ * @tab       Header
+ * @section   Links
+ * @tip       Set the link styles for the email's header.
+ */
+#header .content a,
+#header .content a:visited,
+#header .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+#header .image {
+  height: auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+/**
+ * @tab       Block
+ * @section   Background
+ * @tip       Set the background for the email's block area(s).
+ */
+.block {
+  /*@editable*/
+  background-color: #F4F4F4;
+}
+
+/**
+ * @tab       Block
+ * @section   Border
+ * @tip       Set the border for the email's block area(s).
+ */
+.block {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Block
+ * @section   Text
+ * @tip       Set the text style for the email's block content text.
+ * @theme     main
+ */
+.block .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Block
+ * @section   Links
+ * @tip       Set the link style for the email's block content links.
+ */
+.block .content a,
+.block .content a:visited,
+.block .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editabl e*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.block img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Background
+ * @tip       Set the background color for the email's 3-column area.
+ */
+.cols-3 {
+  width: 100%;
+  /*@editable*/
+  background-color: #F4F4F4;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Border
+ * @tip       Set the border style for the email's 3-column area.
+ */
+.cols-3 {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Column
+ * @tip       Set the column style for the email's 3-column area.
+ */
+.cols-3 .column {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+  /*@editable*/
+  padding-top: 20px;
+  /*@editable*/
+  padding-bottom: 20px;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Text
+ * @tip       Set the text style for your email's column content text.
+ */
+.cols-3 .column .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       3-Column
+ * @section   Links
+ * @tip       Set the link styles for your email's column content text.
+ */
+.cols-3 .column .content a,
+.cols-3 .column .content a:visited,
+.cols-3 .column .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.cols-3 .column img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+}
+
+/**
+ * @tab       Footer
+ * @section   Background
+ * @tip       Set the background color for the email's footer area.
+ * @theme     footer
+ */
+#footer {
+  width: 100%;
+  /*@editable*/
+  background-color: #F4F4F4;
+}
+
+/**
+ * @tab       Footer
+ * @section   Border
+ * @tip       Set the border style for the email's footer area.
+ * @theme     footer
+ */
+#footer {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+}
+
+/**
+ * @tab       Footer
+ * @section   Text
+ * @tip       Set the text style for the email's footer.
+ * @theme     footer
+ */
+#footer .content {
+  /*@editable*/
+  color: #808080;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Footer
+ * @section   Links
+ * @tip       Set the link styles for your footer.
+ */
+#footer .content a,
+#footer .content a:visited,
+#footer .content a .yshortcuts,
+#footer .content a span {
+  /*@editable*/
+  color: #606060;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Background
+ * @tip       Set the background color for the email's postfooter area.
+ */
+#postfooter {
+  width: 100%;
+  /*@editable*/
+  background-color: transparent;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Border
+ * @tip       Set the border style for the email's postfooter area.
+ */
+#postfooter {
+  /*@editable*/
+  border-top: none;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Text
+ * @tip       Set the text style for the email's postfooter.
+ */
+#postfooter .content {
+  /*@editable*/
+  color: #808080;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: justify;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Links
+ * @tip       Set the link styles for your postfooter.
+ */
+#footer .content a,
+#footer .content a:visited,
+#footer .content a .yshortcuts,
+#footer .content a span {
+  /*@editable*/
+  color: #606060;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+@media only screen and (max-width: 480px) {
+  /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+  }
+
+  /* Prevent Webkit platforms from changing default text sizes */
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Prevent iOS Mail from adding padding to the body */
+  /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+  #bodyCell {
+    padding: 10px !important;
+  }
+
+  /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+  /* ======== Page Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section template width
+  * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+  */
+  #templateContainer {
+    max-width: 600px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 1
+  * @tip Make the first-level headings larger in size for better readability on small screens.
+  */
+  h1 {
+    /*@editable*/
+    font-size: 24px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 2
+  * @tip Make the second-level headings larger in size for better readability on small screens.
+  */
+  h2 {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 3
+  * @tip Make the third-level headings larger in size for better readability on small screens.
+  */
+  h3 {
+    /*@editable*/
+    font-size: 18px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 4
+  * @tip Make the fourth-level headings larger in size for better readability on small screens.
+  */
+  h4 {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /* ======== Header Styles ======== */
+  #templatePreheader {
+    display: none !important;
+  }
+
+  /* Hide the template preheader to save space */
+  /**
+  * @tab Mobile Styles
+  * @section header image
+  * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+  */
+  #headerImage {
+    height: auto !important;
+    /*@editable*/
+    max-width: 600px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section header text
+  * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .headerContent {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /* ======== Body Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section body text
+  * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .bodyContent {
+    /*@editable*/
+    font-size: 18px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /* ======== Column Styles ======== */
+  .templateColumnContainer {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section column image
+  * @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+  */
+  .columnImage {
+    height: auto !important;
+    /*@editable*/
+    max-width: 480px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section left column text
+  * @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .leftColumnContent {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section center column text
+  * @tip Make the center column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .centerColumnContent {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section right column text
+  * @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .rightColumnContent {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /* ======== Footer Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section footer text
+  * @tip Make the body content text larger in size for better readability on small screens.
+  */
+  .footerContent {
+    /*@editable*/
+    font-size: 14px !important;
+    /*@editable*/
+    line-height: 115% !important;
+  }
+
+  .footerContent a {
+    display: block !important;
+  }
+
+  /* Place footer social and utility links on their own lines, for easier access */
+}
+</style>
+  
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  <center>
+    
+    <table id="body" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" align="center">
+      <tr>
+        <td id="wrapper" align="center" valign="top">
+          <table id="template" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td align="center" valign="top">
+                <table id="preheader" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="content" mc:edit="preheader_teaser">
+                      Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                    </td>
+                    <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                    <td valign="top" width="180" class="content" mc:edit="preheader_link">
+                      Email not displaying correctly?<br>
+                      <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                    </td>
+                    <!-- *|END:IF|* -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="header" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="content">
+                      <img class="image" src="http://via.placeholder.com/640x300" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table class="block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="content" mc:edit="block_content">
+                      
+                      <h1>Designing Your Template</h1>
+                      <h3>Creating a good-looking email is simple</h3>
+                      
+                      <p>Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.</p>
+                        
+                      <h2>Styling Your Content</h2>
+                      <h4>Make your email easy to read</h4>
+                        
+                      <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                        
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table class="cols-3" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr mc:repeatable="">
+                    <td align="center" valign="top" class="column">
+                      <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                        <tr>
+                          <td class="content">
+                            <img src="http://via.placeholder.com/213" mc:label="column_1_image" mc:edit="column_1_image">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td valign="top" class="content" mc:edit="column_1_content">
+
+                            <h3>Repeatable Content</h3>
+
+                            <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                            <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="center" valign="top" class="column">
+                      <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                        <tr>
+                          <td class="content">
+                            <img src="http://via.placeholder.com/213" mc:label="column_2_image" mc:edit="column_2_image">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td valign="top" class="content" mc:edit="column_2_content">
+
+                            <h3>Repeatable Content</h3>
+
+                            <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                            <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="center" valign="top" class="column">
+                      <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                        <tr>
+                          <td class="content">
+                            <img src="http://via.placeholder.com/213" mc:label="column_3_image" mc:edit="column_3_image">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td valign="top" class="content" mc:edit="column_3_content">
+
+                            <h3>Repeatable Content</h3>
+
+                            <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                            <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="footer" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="content" mc:edit="footer_social">
+                      <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a> |
+                      <a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a> |
+                      <a href="*|FORWARD|*">Forward to Friend</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="content" mc:edit="footer_content">
+                          
+                      <p><em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved.</em></p>
+                        
+                      <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                      <p>*|LIST:DESCRIPTION|*</p>
+
+                      <p><strong>Our mailing address is:</strong><br>
+                        *|HTML:LIST_ADDRESS_HTML|*</p>
+                      <!-- *|END:IF|* -->
+                      
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="postfooter" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top" class="content" mc:edit="postfooter_content">
+                      
+                      <a href="*|UNSUB|*">unsubscribe from this list</a> |
+                      <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
+                      
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            </table></td></tr>
+          </table>
+        
+      
+    
+    
+  </center>
+</body>
+</html>

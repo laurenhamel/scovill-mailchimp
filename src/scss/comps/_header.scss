@@ -1,0 +1,61 @@
+/**
+ * @tab        Header
+ * @section    Background
+ * @tip        Set the background color for your email's header area.
+ * @theme      header
+ */
+#header {
+  width: 100%;
+  /*@editable*/ background-color: #F4F4F4;
+  /*@editable*/ border-top: 1px solid #FFFFFF;
+  /*@editable*/ border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab        Header
+ * @section    Background
+ * @tip        Set the border for your email's header area.
+ * @theme      header
+ */
+#header {
+  /*@editable*/ border-top: 1px solid #FFFFFF;
+  /*@editable*/ border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Header
+ * @section   Text
+ * @tip       Set the text styles for the email's header.
+ */
+#header .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 20px;
+  /*@editable*/ font-weight: bold;
+  /*@editable*/ line-height: 100%;
+  /*@editable*/ padding-top: 0;
+  /*@editable*/ padding-right: 0;
+  /*@editable*/ padding-bottom: 0;
+  /*@editable*/ padding-left: 0;
+  /*@editable*/ text-align: left;
+  /*@editable*/ vertical-align: middle;
+}
+
+/**
+ * @tab       Header
+ * @section   Links
+ * @tip       Set the link styles for the email's header.
+ */
+#header .content a, 
+#header .content a:visited, 
+#header .content a .yshortcuts {
+  /*@editable*/ color: $color-blue;
+  /*@editable*/ font-weight: normal;
+  /*@editable*/ text-decoration: underline;
+}
+
+#header .image {
+  height: auto;
+  width: 100%;
+  max-width: $layout-max-width;
+}

@@ -1,0 +1,21 @@
+/* OUTLOOK */
+    
+table,
+td { 
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+.ExternalClass { width: 100%; }
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+#outlook a { padding: 0; }
+
+img { -ms-interpolation-mode: bicubic; }

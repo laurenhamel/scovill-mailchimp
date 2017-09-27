@@ -1,0 +1,56 @@
+/**
+ * @tab       Block
+ * @section   Background
+ * @tip       Set the background for the email's block area(s).
+ */
+.block {
+  /*@editable*/ background-color: #F4F4F4;
+}
+
+/**
+ * @tab       Block
+ * @section   Border
+ * @tip       Set the border for the email's block area(s).
+ */
+.block {
+  /*@editable*/ border-top: 1px solid #FFFFFF;
+  /*@editable*/ border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Block
+ * @section   Text
+ * @tip       Set the text style for the email's block content text.
+ * @theme     main
+ */
+.block .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  /*@editable*/ text-align: left;
+}
+
+/**
+ * @tab       Block
+ * @section   Links
+ * @tip       Set the link style for the email's block content links.
+ */
+.block .content a, 
+.block .content a:visited, 
+.block .content a .yshortcuts {
+  /*@editable*/ color: $color-blue;
+  /*@editabl e*/ font-weight: normal;
+  /*@editable*/ text-decoration: underline;
+}
+
+.block img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+}

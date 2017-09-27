@@ -1,0 +1,26 @@
+body,
+#body {
+  font-family: sans-serif;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0; 
+  padding:0;
+}
+
+img {
+  border: 0;
+  height: auto; 
+  line-height: 100%; 
+  outline: none; 
+  text-decoration: none;
+}
+
+table { border-collapse: collapse !important; }
+
+a { cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: sans-serif;
+  display: block; 
+  margin: .25em 0 .5em;
+}
