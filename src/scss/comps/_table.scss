@@ -1,0 +1,50 @@
+.table {
+  
+  $radius: $table-radius;
+  $border: 1px solid black;
+  
+  table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    color: $color-blue;
+    width: 100%;
+    font-size: .9em;
+    border: $border;
+    border-top: none;
+    border-radius: 0 0 $radius $radius;
+    
+    th, td, caption { padding: 10px; }
+    
+    caption { 
+      border-top-right-radius: $radius;
+      border-top-left-radius: $radius;
+      background-color: $color-grey-dark; 
+      text-transform: uppercase; 
+      font-weight: bold;
+      border: $border;
+      border-bottom: none;
+    }
+    
+    thead th { text-transform: uppercase; }
+    
+    thead tr { background-color: white; }
+    
+    thead tr:nth-child(even) { background-color: $color-grey; }
+    
+    tbody tr { background-color: white; }
+    
+    tbody tr:nth-child(odd) { background-color: $color-grey; }
+
+    tbody tr:last-child td:first-child,
+    tbody tr:last-child th:first-child { 
+      border-bottom-left-radius: $radius; 
+    }
+    
+    tbody tr:last-child td:last-child,
+    tbody tr:last-child th:last-child { 
+      border-bottom-right-radius: $radius; 
+    }
+    
+  }
+  
+}

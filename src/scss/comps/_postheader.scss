@@ -1,0 +1,93 @@
+/**
+ * @tab        Postheader
+ * @section    Background
+ * @tip        Set the background color for your email's postheader area.
+ * @theme      postheader
+ */
+#postheader {
+  width: 100%;
+  /*@editable*/ background-color: white;
+}
+
+/**
+ * @tab        Postheader
+ * @section    Border
+ * @tip        Set the border style for your email's postheader area.
+ * @theme      postheader
+ */
+#postheader {
+  /*@editable*/ border-top: 1px solid #FFFFFF;
+  /*@editable*/ border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Postheader Image
+ * @tip       Make the postheader image fluid on smaller screens.
+ */
+#postheader {
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    height: auto !important;
+    /*@editable*/ max-width: $layout-max-width !important;
+    /*@editable*/ width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Mobile
+ * @section   Postheader Text
+ * @tip       Make the postheader text larger on smaller screens.
+ */
+#postheader {
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    /*@editable*/ font-size: 20px !important;
+    /*@editable*/ line-height: 125% !important;
+  }
+}
+
+/**
+ * @tab       Postheader
+ * @section   Text
+ * @tip       Set the text styles for the email's postheader.
+ */
+#postheader .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 20px;
+  /*@editable*/ font-weight: bold;
+  /*@editable*/ line-height: 100%;
+  /*@editable*/ padding-top: 0;
+  /*@editable*/ padding-right: 0;
+  /*@editable*/ padding-bottom: 50px;
+  /*@editable*/ padding-left: 0;
+  /*@editable*/ text-align: center;
+  /*@editable*/ vertical-align: middle;
+}
+
+/**
+ * @tab       Postheader
+ * @section   Links
+ * @tip       Set the link styles for the email's postheader.
+ */
+#postheader .content a, 
+#postheader .content a:visited, 
+#postheader .content a .yshortcuts {
+  /*@editable*/ color: $color-blue;
+  /*@editable*/ font-weight: normal;
+  /*@editable*/ text-decoration: underline;
+}
+
+/**
+ * @tab       Postheader
+ * @section   Image Spacing
+ * @tip       Set the spacing between images in the email's postheader.
+ */
+#postheader img + img {
+  /*@editable*/ margin-left: 20px;
+}
+
+#postheader img {
+  margin: 0 auto;
+  display: inline-block;
+  max-width: $layout-max-width;
+}

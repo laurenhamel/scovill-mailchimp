@@ -1,0 +1,19 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: inherit !important;
+  
+  li {
+    list-style-type: none;
+    
+    &::before {
+      content: "◼";
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 10px;
+      color: $color-blue;
+    }
+    
+  }
+  
+}

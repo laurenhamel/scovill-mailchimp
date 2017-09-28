@@ -1,0 +1,7 @@
+@include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+  
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+  } 
+  
+}

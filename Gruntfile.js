@@ -55,7 +55,10 @@ module.exports = function(grunt) {
     assets_inline: {
       dist: {
         files: {
-          'dist/3-column-template.html' : 'dist/3-column-template.html'
+          'dist/3-column-template.html' : 'dist/3-column-template.html',
+          'dist/2-column-template.html' : 'dist/2-column-template.html',
+          'dist/4-column-template.html' : 'dist/4-column-template.html',
+          'dist/master-template.html' : 'dist/master-template.html'
         }
       }
     },

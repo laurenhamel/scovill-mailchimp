@@ -1,3 +1,9 @@
 /* OSX / iOS */
     
 body { -webkit-text-size-adjust: 100%; }
+
+@include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+  
+  body { width:100% !important; min-width:100% !important; }
+  
+}

@@ -1,5 +1,20 @@
-#wrapper { padding: 20px; }
-#template { max-width: $layout-max-width; }
+#wrapper { 
+  padding: 20px; 
+  
+  @include breakpoint( $breakpoint-tablet ) { padding: 10px !important; }
+  @include breakpoint( $breakpoint-mobile ) { padding: 0 !important; }
+  
+}
+
+#template { 
+  margin: 0 auto;
+  max-width: $layout-max-width !important; 
+  
+  @include breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    width: 100% !important;
+  }
+  
+}
 
 /**
  * @tab       Page
@@ -9,7 +24,7 @@
  */
 body,
 #body {
-  /*@editable*/ background-color: white;
+  /*@editable*/ background-color: #F4F4F4;
 }
 
 /**
@@ -36,6 +51,20 @@ body,
 }
 
 /**
+ * @tab       Mobile
+ * @section   Fonts
+ * @tip       Make body text larger for smaller screans.
+ * @theme     body
+ */
+@include breakpoint( $breakpoint-mobile ) {
+  body,
+  #body {
+    /*@editable*/ font-size: 18px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
  * @tab       Page
  * @section   Links
  * @tip       Set link styles for the email.
@@ -52,7 +81,7 @@ a:visted {
  * @style     Heading 1
  */
 h1 {
-  /*@editable*/ color: #333333 !important;
+  /*@editable*/ color: $color-blue !important;
   /*@editable*/ font-family: $font-heading;
   /*@editable*/ font-size: 26px;
   /*@editable*/ font-style: normal;
@@ -60,6 +89,18 @@ h1 {
   /*@editable*/ line-height: 100%;
   /*@editable*/ letter-spacing: normal;
   /*@editable*/ text-align: left;
+}
+  
+/**
+ * @tab       Mobile
+ * @section   Heading 1
+ * @tip       Make first-level headings larger on smaller screen.
+ */
+h1 {
+  @include breakpoint( $breakpoint-mobile ) {
+    font-size: 24px !important;
+    line-height: 100% !important;
+  }
 }
 
 /**
@@ -69,7 +110,7 @@ h1 {
  * @style     Heading 2
  */
 h2 {
-  /*@editable*/ color: #404040 !important;
+  /*@editable*/ color: $color-grey-dark !important;
   /*@editable*/ font-family: $font-heading;
   /*@editable*/ font-size: 20px;
   /*@editable*/ font-style: normal;
@@ -77,6 +118,18 @@ h2 {
   /*@editable*/ line-height: 100%;
   /*@editable*/ letter-spacing: normal;
   /*@editable*/ text-align: left;
+}
+  
+/**
+ * @tab       Mobile
+ * @section   Heading 2
+ * @tip       Make second-level headings larger on smaller screen.
+ */
+h2 {
+  @include breakpoint( $breakpoint-mobile ) {
+    font-size: 20px !important;
+    line-height: 100% !important;
+  }
 }
 
 /**
@@ -86,14 +139,26 @@ h2 {
  * @style     Heading 3
  */
 h3 {
-  /*@editable*/ color: #606060 !important;
+  /*@editable*/ color: $color-blue !important;
   /*@editable*/ font-family: $font-heading;
   /*@editable*/ font-size: 16px;
-  /*@editable*/ font-style: italic;
-  /*@editable*/ font-weight: normal;
+  /*@editable*/ font-style: normal;
+  /*@editable*/ font-weight: bold;
   /*@editable*/ line-height: 100%;
   /*@editable*/ letter-spacing: normal;
   /*@editable*/ text-align: left;
+}
+  
+/**
+ * @tab       Mobile
+ * @section   Heading 3
+ * @tip       Make third-level headings larger on smaller screen.
+ */
+h3 {
+  @include breakpoint( $breakpoint-mobile ) {
+    font-size: 18px !important;
+    line-height: 100% !important;
+  }
 }
 
 /**
@@ -103,7 +168,7 @@ h3 {
  * @style     Heading 4
  */
 h4 {
-  /*@editable*/ color: #808080 !important;
+  /*@editable*/ color: $color-grey-dark !important;
   /*@editable*/ font-family: $font-heading;
   /*@editable*/ font-size: 14px;
   /*@editable*/ font-style: italic;
@@ -111,4 +176,16 @@ h4 {
   /*@editable*/ line-height: 100%;
   /*@editable*/ letter-spacing: normal;
   /*@editable*/ text-align: left;
+}
+  
+/**
+ * @tab       Mobile
+ * @section   Heading 4
+ * @tip       Make fourth-level headings larger on smaller screen.
+ */
+h4 {
+  @include breakpoint( $breakpoint-mobile ) {
+    font-size: 16px !important;
+    line-height: 100% !important;
+  }
 }

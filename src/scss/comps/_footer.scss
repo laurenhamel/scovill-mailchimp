@@ -6,7 +6,7 @@
  */
 #footer {
   width: 100%;
-  /*@editable*/ background-color: #F4F4F4;
+  /*@editable*/ background-color: white;
 }
 
 /**
@@ -34,7 +34,43 @@
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  /*@editable*/ text-align: left;
+  /*@editable*/ text-align: center;
+}
+
+/**
+ * @tab       Footer
+ * @section   Social
+ * @tip       Set the social button style for the email's footer.
+ */
+#footer .social table {
+  margin: 0 auto;
+  border-collapse: separate !important;
+  /*@editable*/ border-spacing: 20px;
+  
+  a { display: block; }
+  
+}
+
+/**
+ * @tab       Footer
+ * @section   Social
+ * @tip       Set the size of the social button for the email's footer.
+ */
+#footer .social img {
+  /*@editable*/ width: 30px;
+  /*@editable*/ height: 30px;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Footer Text
+ * @tip       Make the footer text larger on smaller screens.
+ */
+#footer .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 14px;
+    /*@editable*/ line-height: 115%;
+  }
 }
 
 /**

@@ -4,7 +4,7 @@
  * @tip       Set the background for the email's block area(s).
  */
 .block {
-  /*@editable*/ background-color: #F4F4F4;
+  /*@editable*/ background-color: white;
 }
 
 /**
@@ -19,11 +19,11 @@
 
 /**
  * @tab       Block
- * @section   Text
- * @tip       Set the text style for the email's block content text.
+ * @section   Text Block - Text
+ * @tip       Set the text style for the email's text-only blocks.
  * @theme     main
  */
-.block .content {
+.block .text-block .content {
   /*@editable*/ color: #505050;
   /*@editable*/ font-family: $font-body;
   /*@editable*/ font-size: 16px;
@@ -35,6 +35,182 @@
   width: 100%;
   /*@editable*/ text-align: left;
 }
+
+/**
+ * @tab       Mobile
+ * @section   Text Block - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+.block .text-block .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+.block .table-block { width: 100%; }
+
+/**
+ * @tab       Block
+ * @section   Table Block - Table
+ * @tip       Set the table style for the email's text-only blocks.
+ * @theme     main
+ */
+.block .table-block .table {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  /*@editable*/ text-align: left;
+  
+  table, td, th, caption { text-align: inherit; }
+  
+}
+
+/**
+ * @tab       Mobile
+ * @section   Table Block - Table
+ * @tip       Make block table larger on smaller screens.
+ */
+.block .table-block .table {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Split Block - Text
+ * @tip       Set the text style for the email's image-and-text blocks.
+ * @theme     main
+ */
+.block .text-image-block .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+  /*@editable*/ text-align: left;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+}
+
+.block .table-image-block {
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Split Block - Table
+ * @tip       Set the table style for the email's image-and-table blocks.
+ * @theme     main
+ */
+.block .table-image-block .table {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+  /*@editable*/ text-align: left;
+  
+  table, td, th, caption { text-align: inherit; }
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+}
+
+/**
+ * @tab       Mobile
+ * @section   Split Block - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+.block .text-image-block .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Mobile
+ * @section   Split Block - Table
+ * @tip       Make block text larger on smaller screens.
+ */
+.block .table-image-block .table {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Split Block - Image
+ * @tip       Set the image style for the email's image-and-text blocks.
+ * @theme     main
+ */
+.block .text-image-block .image,
+.block .table-image-block .image {
+  /*@editable*/ width: 50%;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px !important;
+  }
+  
+}
+
+/**
+ * @tab       Block
+ * @section   Image Block - Image
+ * @tip       Set the image style for the email's image-only blocks.
+ * @theme     main
+ */
+.block .image-block .image {
+  /*@editable*/ width: 100%;
+}
+
+.block .text-image-block .image,
+.block .table-image-block .image,
+.block .image-block .image {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+}
+
+.block .text-image-block.left .image,
+.block .table-image-block.left .image { padding-right: 0; }
+.block .text-image-block.right .image,
+.block .table-image-block.right .image { padding-left: 0; }
 
 /**
  * @tab       Block
@@ -50,7 +226,14 @@
 }
 
 .block img {
-  display: inline;
+  display: block;
   height: auto;
+  width: 100%;
   max-width: 100%;
+  margin: 0 auto;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    width: 100% !important;
+  }
+  
 }

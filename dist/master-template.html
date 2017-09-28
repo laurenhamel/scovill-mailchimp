@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  
+  <title>*|MC:SUBJECT|*</title>
+  
+  <style>@charset "UTF-8";
+/* VENDORS */
+/* UTILITIES */
+/* CONFIGURATIONS */
+/* COLORS */
+/* FONTS */
+/* LAYOUT */
+/* BREAKPOINTS */
+/* COMPONENTS */
+/* CLIENT NORMALIZATION */
+/* OUTLOOK */
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* OSX / iOS */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+/* WINDOWS MOBILE */
+body {
+  -ms-text-size-adjust: 100%;
+}
+
+@media (max-width: 480px) {
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+  }
+}
+@media (max-width: 640px) {
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+  }
+}
+/* BROWSER NORMALIZATION */
+body,
+#body {
+  font-family: sans-serif;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  display: block;
+  margin: .25em 0 .5em;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box !important;
+}
+
+/* EMAIL COMPONENTS */
+#wrapper {
+  padding: 20px;
+}
+@media (max-width: 640px) {
+  #wrapper {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 480px) {
+  #wrapper {
+    padding: 0 !important;
+  }
+}
+
+#template {
+  margin: 0 auto;
+  max-width: 640px !important;
+}
+@media (max-width: 480px) {
+  #template {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Page
+ * @section   Background
+ * @tip       Set the background color of the email.
+ * @theme     Page
+ */
+body,
+#body {
+  /*@editable*/
+  background-color: #F4F4F4;
+}
+
+/**
+ * @tab       Page
+ * @section   Border
+ * @tip       Set the border around the email.
+ */
+#template {
+  /*@editable*/
+  border: none;
+}
+
+/**
+ * @tab       Page
+ * @section   Fonts
+ * @tip       Set body styles for the email.
+ * @theme     body
+ */
+body,
+#body {
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  color: #333333;
+  /*@editable*/
+  line-height: 100%;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Fonts
+ * @tip       Make body text larger for smaller screans.
+ * @theme     body
+ */
+@media (max-width: 480px) {
+  body,
+  #body {
+    /*@editable*/
+    font-size: 18px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+/**
+ * @tab       Page
+ * @section   Links
+ * @tip       Set link styles for the email.
+ */
+a,
+a:visted {
+  /*@editable*/
+  color: #00306A;
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 1
+ * @tip       Set the style for first-level headings.
+ * @style     Heading 1
+ */
+h1 {
+  /*@editable*/
+  color: #00306A !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 26px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Heading 1
+ * @tip       Make first-level headings larger on smaller screen.
+ */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px !important;
+    line-height: 100% !important;
+  }
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 2
+ * @tip       Set the style for second-level headings.
+ * @style     Heading 2
+ */
+h2 {
+  /*@editable*/
+  color: #A8A9AD !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Heading 2
+ * @tip       Make second-level headings larger on smaller screen.
+ */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px !important;
+    line-height: 100% !important;
+  }
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 3
+ * @tip       Set the style for third-level headings.
+ * @style     Heading 3
+ */
+h3 {
+  /*@editable*/
+  color: #00306A !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Heading 3
+ * @tip       Make third-level headings larger on smaller screen.
+ */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px !important;
+    line-height: 100% !important;
+  }
+}
+
+/**
+ * @tab       Page
+ * @section   Heading 4
+ * @tip       Set the style for fourth-level headings.
+ * @style     Heading 4
+ */
+h4 {
+  /*@editable*/
+  color: #A8A9AD !important;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  font-style: italic;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Heading 4
+ * @tip       Make fourth-level headings larger on smaller screen.
+ */
+@media (max-width: 480px) {
+  h4 {
+    font-size: 16px !important;
+    line-height: 100% !important;
+  }
+}
+
+/**
+ * @tab       Preheader
+ * @section   Background
+ * @tip       Set the background color for the email's preheader.
+ * @theme     header
+ */
+#preheader {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+@media (max-width: 480px) {
+  #preheader {
+    display: none !important;
+  }
+}
+
+/**
+ * @tab       Preheader
+ * @section   Border
+ * @tip       Set the bottom border of the email's preheader.
+ */
+#preheader {
+  /*@editable*/
+  border-bottom: 1px solid #FFFFFF;
+  /*@editable*/
+  border-top: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab        Preheader
+ * @section    Text
+ * @tip        Set the text styles for the email's preheader.
+ */
+#preheader .content {
+  /*@editable*/
+  color: #808080;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 125%;
+  /*@editable*/
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+/**
+ * @tab        Preheader
+ * @section    Links
+ * @tip        Set the link styles for the email's preheader.
+ */
+#preheader .content a,
+#preheader .content a:visited,
+#preheader .content a .yshortcuts {
+  /*@editable*/
+  color: #606060;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+#preheader .content:last-of-type {
+  text-align: right;
+}
+
+/**
+ * @tab        Header
+ * @section    Background
+ * @tip        Set the background color for your email's header area.
+ * @theme      header
+ */
+#header {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab        Header
+ * @section    Border
+ * @tip        Set the border style for your email's header area.
+ * @theme      header
+ */
+#header {
+  /*@editable*/
+  border-top: 1px solid #CCCCCC;
+  /*@editable*/
+  border-bottom: 1px solid #FFFFFF;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Header Image
+ * @tip       Make the header image fluid on smaller screens.
+ */
+@media (max-width: 480px) {
+  #header {
+    height: auto !important;
+    /*@editable*/
+    max-width: 640px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  #header {
+    height: auto !important;
+    /*@editable*/
+    max-width: 640px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Mobile
+ * @section   Header Text
+ * @tip       Make the header text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  #header {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+}
+@media (max-width: 640px) {
+  #header {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+}
+
+/**
+ * @tab       Header
+ * @section   Text
+ * @tip       Set the text styles for the email's header.
+ */
+#header .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  padding-top: 0;
+  /*@editable*/
+  padding-right: 0;
+  /*@editable*/
+  padding-bottom: 0;
+  /*@editable*/
+  padding-left: 0;
+  /*@editable*/
+  text-align: left;
+  /*@editable*/
+  vertical-align: middle;
+}
+
+/**
+ * @tab       Header
+ * @section   Links
+ * @tip       Set the link styles for the email's header.
+ */
+#header .content a,
+#header .content a:visited,
+#header .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+#header img {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+/**
+ * @tab        Postheader
+ * @section    Background
+ * @tip        Set the background color for your email's postheader area.
+ * @theme      postheader
+ */
+#postheader {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab        Postheader
+ * @section    Border
+ * @tip        Set the border style for your email's postheader area.
+ * @theme      postheader
+ */
+#postheader {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Postheader Image
+ * @tip       Make the postheader image fluid on smaller screens.
+ */
+@media (max-width: 480px) {
+  #postheader {
+    height: auto !important;
+    /*@editable*/
+    max-width: 640px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  #postheader {
+    height: auto !important;
+    /*@editable*/
+    max-width: 640px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Mobile
+ * @section   Postheader Text
+ * @tip       Make the postheader text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  #postheader {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+}
+@media (max-width: 640px) {
+  #postheader {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+}
+
+/**
+ * @tab       Postheader
+ * @section   Text
+ * @tip       Set the text styles for the email's postheader.
+ */
+#postheader .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  padding-top: 0;
+  /*@editable*/
+  padding-right: 0;
+  /*@editable*/
+  padding-bottom: 50px;
+  /*@editable*/
+  padding-left: 0;
+  /*@editable*/
+  text-align: center;
+  /*@editable*/
+  vertical-align: middle;
+}
+
+/**
+ * @tab       Postheader
+ * @section   Links
+ * @tip       Set the link styles for the email's postheader.
+ */
+#postheader .content a,
+#postheader .content a:visited,
+#postheader .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+/**
+ * @tab       Postheader
+ * @section   Image Spacing
+ * @tip       Set the spacing between images in the email's postheader.
+ */
+#postheader img + img {
+  /*@editable*/
+  margin-left: 20px;
+}
+
+#postheader img {
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 640px;
+}
+
+/**
+ * @tab       Block
+ * @section   Background
+ * @tip       Set the background for the email's block area(s).
+ */
+.block {
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab       Block
+ * @section   Border
+ * @tip       Set the border for the email's block area(s).
+ */
+.block {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       Block
+ * @section   Text Block - Text
+ * @tip       Set the text style for the email's text-only blocks.
+ * @theme     main
+ */
+.block .text-block .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Text Block - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .text-block .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+.block .table-block {
+  width: 100%;
+}
+
+/**
+ * @tab       Block
+ * @section   Table Block - Table
+ * @tip       Set the table style for the email's text-only blocks.
+ * @theme     main
+ */
+.block .table-block .table {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  /*@editable*/
+  text-align: left;
+}
+.block .table-block .table table, .block .table-block .table td, .block .table-block .table th, .block .table-block .table caption {
+  text-align: inherit;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Table Block - Table
+ * @tip       Make block table larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .table-block .table {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Split Block - Text
+ * @tip       Set the text style for the email's image-and-text blocks.
+ * @theme     main
+ */
+.block .text-image-block .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+  /*@editable*/
+  text-align: left;
+}
+@media (max-width: 480px) {
+  .block .text-image-block .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .text-image-block .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .block .table-image-block {
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .table-image-block {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Split Block - Table
+ * @tip       Set the table style for the email's image-and-table blocks.
+ * @theme     main
+ */
+.block .table-image-block .table {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+  /*@editable*/
+  text-align: left;
+}
+.block .table-image-block .table table, .block .table-image-block .table td, .block .table-image-block .table th, .block .table-image-block .table caption {
+  text-align: inherit;
+}
+@media (max-width: 480px) {
+  .block .table-image-block .table {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .table-image-block .table {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Mobile
+ * @section   Split Block - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .text-image-block .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Mobile
+ * @section   Split Block - Table
+ * @tip       Make block text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .table-image-block .table {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Split Block - Image
+ * @tip       Set the image style for the email's image-and-text blocks.
+ * @theme     main
+ */
+.block .text-image-block .image,
+.block .table-image-block .image {
+  /*@editable*/
+  width: 50%;
+}
+@media (max-width: 480px) {
+  .block .text-image-block .image,
+  .block .table-image-block .image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .text-image-block .image,
+  .block .table-image-block .image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px !important;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Image Block - Image
+ * @tip       Set the image style for the email's image-only blocks.
+ * @theme     main
+ */
+.block .image-block .image {
+  /*@editable*/
+  width: 100%;
+}
+
+.block .text-image-block .image,
+.block .table-image-block .image,
+.block .image-block .image {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+}
+
+.block .text-image-block.left .image,
+.block .table-image-block.left .image {
+  padding-right: 0;
+}
+
+.block .text-image-block.right .image,
+.block .table-image-block.right .image {
+  padding-left: 0;
+}
+
+/**
+ * @tab       Block
+ * @section   Links
+ * @tip       Set the link style for the email's block content links.
+ */
+.block .content a,
+.block .content a:visited,
+.block .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editabl e*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.block img {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .block img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .block img {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       2-Columns
+ * @section   Background
+ * @tip       Set the background color for the email's 2-column area.
+ */
+.cols-2 {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab       Mobile
+ * @section   2-Columns Gutter
+ * @tip       Set the gutter for the 2-column area on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-2 {
+    border-collapse: separate !important;
+    /*@editable*/
+    border-spacing: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-2 {
+    border-collapse: separate !important;
+    /*@editable*/
+    border-spacing: 20px !important;
+  }
+}
+
+.cols-2 .items-2-2 {
+  width: 100%;
+}
+
+.cols-2 .items-1-2 {
+  width: 50%;
+}
+
+/**
+ * @tab       2-Columns
+ * @section   Border
+ * @tip       Set the border style for the email's 2-column area.
+ */
+.cols-2 {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       2-Columns
+ * @section   Gutter
+ * @tip       Set the gutter for the email's 2-column area.
+ */
+.cols-2 [class*=" items-"],
+.cols-2 [class^="items-"] {
+  margin: 0 auto;
+  border-collapse: separate !important;
+  /*@editable*/
+  border-spacing: 20px;
+}
+@media (max-width: 480px) {
+  .cols-2 [class*=" items-"],
+  .cols-2 [class^="items-"] {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-2 [class*=" items-"],
+  .cols-2 [class^="items-"] {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+}
+
+.cols-2 .column {
+  width: 50%;
+  max-width: 50%;
+}
+@media (max-width: 480px) {
+  .cols-2 .column {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-2 .column {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+
+/**
+ * @tab       2-Columns
+ * @section   Text
+ * @tip       Set the text style for your email's 2-column content text.
+ */
+.cols-2 .column .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  line-height: 150%;
+  /*@editable*/
+  text-align: left;
+  padding: 0;
+}
+
+/**
+ * @tab       Mobile
+ * @section   2-Column Text
+ * @tip       Make column text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-2 .column .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       2-Columns
+ * @section   Cell Spacing
+ * @tip       Set the spacing between cell content in the email's 2-column area.
+ */
+.cols-2 .column tr:not(:first-of-type) .content {
+  /*@editable*/
+  padding-top: 20px;
+}
+
+/**
+ * @tab       2-Columns
+ * @section   Links
+ * @tip       Set the link styles for your email's 2-column content text.
+ */
+.cols-2 .column .content a,
+.cols-2 .column .content a:visited,
+.cols-2 .column .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.cols-2 .column img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 480px) {
+  .cols-2 .column img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-2 .column img {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Background
+ * @tip       Set the background color for the email's 3-column area.
+ */
+.cols-3 {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab       Mobile
+ * @section   3-Columns Gutter
+ * @tip       Set the gutter for the 3-column area on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-3 {
+    border-collapse: separate !important;
+    /*@editable*/
+    border-spacing: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-3 {
+    border-collapse: separate !important;
+    /*@editable*/
+    border-spacing: 20px !important;
+  }
+}
+
+.cols-3 .items-3-3 {
+  width: 100%;
+}
+
+.cols-3 .items-2-3 {
+  width: 66.6666666667%;
+}
+
+.cols-3 .items-1-3 {
+  width: 33.3333333333%;
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Border
+ * @tip       Set the border style for the email's 3-column area.
+ */
+.cols-3 {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Gutter
+ * @tip       Set the gutter for the email's 3-column area.
+ */
+.cols-3 [class*=" items-"],
+.cols-3 [class^="items-"] {
+  margin: 0 auto;
+  border-collapse: separate !important;
+  /*@editable*/
+  border-spacing: 20px;
+}
+@media (max-width: 480px) {
+  .cols-3 [class*=" items-"],
+  .cols-3 [class^="items-"] {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-3 [class*=" items-"],
+  .cols-3 [class^="items-"] {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+}
+
+.cols-3 .column {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+@media (max-width: 480px) {
+  .cols-3 .column {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-3 .column {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Text
+ * @tip       Set the text style for your email's 3-column content text.
+ */
+.cols-3 .column .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  line-height: 150%;
+  /*@editable*/
+  text-align: left;
+  padding: 0;
+}
+
+/**
+ * @tab       Mobile
+ * @section   3-Column Text
+ * @tip       Make column text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-3 .column .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Spacing
+ * @tip       Set the spacing between content in the email's 3-column area.
+ */
+.cols-3 .column tr:not(:first-of-type) .content {
+  /*@editable*/
+  padding-top: 20px;
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Links
+ * @tip       Set the link styles for your email's 3-column content text.
+ */
+.cols-3 .column .content a,
+.cols-3 .column .content a:visited,
+.cols-3 .column .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.cols-3 .column img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 480px) {
+  .cols-3 .column img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-3 .column img {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       4-Columns
+ * @section   Background
+ * @tip       Set the background color for the email's 4-column area.
+ */
+.cols-4 {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab       Mobile
+ * @section   4-Columns Gutter
+ * @tip       Set the gutter for the 4-column area on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-4 {
+    border-collapse: separate !important;
+    /*@editable*/
+    border-spacing: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-4 {
+    border-collapse: separate !important;
+    /*@editable*/
+    border-spacing: 20px !important;
+  }
+}
+
+.cols-4 .items-4-4 {
+  width: 100%;
+}
+
+.cols-4 .items-3-4 {
+  width: 75%;
+}
+
+.cols-4 .items-2-4 {
+  width: 50%;
+}
+
+.cols-4 .items-1-4 {
+  width: 25%;
+}
+
+/**
+ * @tab       4-Columns
+ * @section   Border
+ * @tip       Set the border style for the email's 4-column area.
+ */
+.cols-4 {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+  /*@editable*/
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * @tab       4-Columns
+ * @section   Gutter
+ * @tip       Set the inner gutter for the email's 4-column area.
+ */
+.cols-4 [class*=" items-"],
+.cols-4 [class^="items-"] {
+  margin: 0 auto;
+  border-collapse: separate !important;
+  /*@editable*/
+  border-spacing: 20px;
+}
+@media (max-width: 480px) {
+  .cols-4 [class*=" items-"],
+  .cols-4 [class^="items-"] {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-4 [class*=" items-"],
+  .cols-4 [class^="items-"] {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+}
+
+.cols-4 .column {
+  width: 25%;
+  max-width: 25%;
+}
+@media (max-width: 480px) {
+  .cols-4 .column {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-4 .column {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+
+/**
+ * @tab       4-Columns
+ * @section   Text
+ * @tip       Set the text style for your email's 4-column content text.
+ */
+.cols-4 .column .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  line-height: 150%;
+  /*@editable*/
+  text-align: left;
+  padding: 0;
+}
+
+/**
+ * @tab       Mobile
+ * @section   4-Column Text
+ * @tip       Make column text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-4 .column .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       4-Columns
+ * @section   Cell Spacing
+ * @tip       Set the spacing between cell content in the email's 4-column area.
+ */
+.cols-4 .column tr:not(:first-of-type) .content {
+  /*@editable*/
+  padding-top: 20px;
+}
+
+/**
+ * @tab       4-Columns
+ * @section   Links
+ * @tip       Set the link styles for your email's 4-column content text.
+ */
+.cols-4 .column .content a,
+.cols-4 .column .content a:visited,
+.cols-4 .column .content a .yshortcuts {
+  /*@editable*/
+  color: #00306A;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.cols-4 .column img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 480px) {
+  .cols-4 .column img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-4 .column img {
+    width: 100% !important;
+  }
+}
+
+/**
+ * @tab       Footer
+ * @section   Background
+ * @tip       Set the background color for the email's footer area.
+ * @theme     footer
+ */
+#footer {
+  width: 100%;
+  /*@editable*/
+  background-color: white;
+}
+
+/**
+ * @tab       Footer
+ * @section   Border
+ * @tip       Set the border style for the email's footer area.
+ * @theme     footer
+ */
+#footer {
+  /*@editable*/
+  border-top: 1px solid #FFFFFF;
+}
+
+/**
+ * @tab       Footer
+ * @section   Text
+ * @tip       Set the text style for the email's footer.
+ * @theme     footer
+ */
+#footer .content {
+  /*@editable*/
+  color: #808080;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: center;
+}
+
+/**
+ * @tab       Footer
+ * @section   Social
+ * @tip       Set the social button style for the email's footer.
+ */
+#footer .social table {
+  margin: 0 auto;
+  border-collapse: separate !important;
+  /*@editable*/
+  border-spacing: 20px;
+}
+#footer .social table a {
+  display: block;
+}
+
+/**
+ * @tab       Footer
+ * @section   Social
+ * @tip       Set the size of the social button for the email's footer.
+ */
+#footer .social img {
+  /*@editable*/
+  width: 30px;
+  /*@editable*/
+  height: 30px;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Footer Text
+ * @tip       Make the footer text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  #footer .content {
+    /*@editable*/
+    font-size: 14px;
+    /*@editable*/
+    line-height: 115%;
+  }
+}
+
+/**
+ * @tab       Footer
+ * @section   Links
+ * @tip       Set the link styles for your footer.
+ */
+#footer .content a,
+#footer .content a:visited,
+#footer .content a .yshortcuts,
+#footer .content a span {
+  /*@editable*/
+  color: #606060;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Background
+ * @tip       Set the background color for the email's postfooter area.
+ */
+#postfooter {
+  width: 100%;
+  /*@editable*/
+  background-color: transparent;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Border
+ * @tip       Set the border style for the email's postfooter area.
+ */
+#postfooter {
+  /*@editable*/
+  border-top: none;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Text
+ * @tip       Set the text style for the email's postfooter.
+ */
+#postfooter .content {
+  /*@editable*/
+  color: #666666;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: center;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Rewards
+ * @tip       Set the rewards style for the email's postfooter.
+ */
+#postfooter .rewards {
+  /*@editable*/
+  color: #666666;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: center;
+}
+
+/**
+ * @tab       Postfooter
+ * @section   Links
+ * @tip       Set the link styles for your postfooter.
+ */
+#postfooter .content a,
+#postfooter .content a:visited,
+#postfooter .content a .yshortcuts,
+#postfooter .content a span {
+  /*@editable*/
+  color: #666666;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.table table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  color: #00306A;
+  width: 100%;
+  font-size: .9em;
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+.table table th, .table table td, .table table caption {
+  padding: 10px;
+}
+.table table caption {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #A8A9AD;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid black;
+  border-bottom: none;
+}
+.table table thead th {
+  text-transform: uppercase;
+}
+.table table thead tr {
+  background-color: white;
+}
+.table table thead tr:nth-child(even) {
+  background-color: #E4E4E4;
+}
+.table table tbody tr {
+  background-color: white;
+}
+.table table tbody tr:nth-child(odd) {
+  background-color: #E4E4E4;
+}
+.table table tbody tr:last-child td:first-child,
+.table table tbody tr:last-child th:first-child {
+  border-bottom-left-radius: 10px;
+}
+.table table tbody tr:last-child td:last-child,
+.table table tbody tr:last-child th:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.block img,
+.cols-4 img,
+.cols-3 img,
+.cols-2 img {
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: inherit !important;
+}
+ul li {
+  list-style-type: none;
+}
+ul li::before {
+  content: "◼";
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+  color: #00306A;
+}
+
+.button {
+  margin: 0 auto !important;
+  display: block !important;
+  font-size: 16px;
+  padding: 15px;
+  text-align: center !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  background-color: #00306A !important;
+  color: white !important;
+  border-radius: 2px !important;
+  cursor: pointer !important;
+}
+</style>
+  
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  <center>
+    
+    <table id="body" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" align="center">
+      <tr>
+        <td id="wrapper" align="center" valign="top">
+          <table id="template" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td align="center" valign="top">
+                <table id="preheader" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="content" mc:edit="preheader_teaser">
+                      Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                    </td>
+                    <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                    <td valign="top" width="180" class="content" mc:edit="preheader_link">
+                      Email not displaying correctly?<br>
+                      <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                    </td>
+                    <!-- *|END:IF|* -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="header" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="content">
+                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/ce310b0e-350f-49e4-bab1-676e36509549.png" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="postheader" border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable="">
+                  <tr>
+                    <td valign="top" class="content">
+                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/89a978b0-c66e-4dd6-bfa0-89f431e44e41.png" style="width: 13%; max-width: 75px;" mc:repeatable="brand" mc:variant="Gripper" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="">
+                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/82f24573-5b9a-4c79-9102-08d13f8ab9a0.png" style="width: 13%; max-width: 75px;" mc:repeatable="brand" mc:variant="Duramark" mc:label="postheader_image_2" mc:edit="postheader_image_2" mc:allowdesigner="" mc:allowtext="">
+                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/45e17604-336c-40c4-9de5-ae37a3dc4d86.png" style="width: 13%; max-width: 75px;" mc:repeatable="brand" mc:variant="DOT" mc:label="postheader_image_3" mc:edit="postheader_image_3" mc:allowdesigner="" mc:allowtext="">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table class="block" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr mc:repeatable="blocks" mc:variant="text block">
+                    <td>
+                      <table class="text-block">
+                        <tr>
+                          <td valign="top" class="content" mc:edit="block_content">
+
+                            <h1>Designing Your Template</h1>
+                            <h2>Creating a good-looking email is simple</h2>
+
+                            <p>Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.</p>
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                            <ul>
+                              <li>List Item 1</li>
+                              <li>List Item 2</li>
+                              <li>List Item 3</li>
+                              <li>List Item 4</li>
+                            </ul>
+                            
+                            <a href="#" class="button" style="width: 150px;">Learn More</a>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="table block">
+                    <td>
+                      <table class="table-block">
+                        <tr>
+                          <td valign="top" class="table" mc:edit="block_content">
+
+                            <table>
+                              <caption>Table Caption</caption>
+                              <thead>
+                                <tr>
+                                  <th>Heading 1</th>
+                                  <th>Heading 2</th>
+                                  <th>Heading 3</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Subheading 1</th>
+                                  <td>Data 1</td>
+                                  <td>Data 2</td>
+                                </tr>
+                                <tr>
+                                  <th>Subheading 2</th>
+                                  <td>Data 3</td>
+                                  <td>Data 4</td>
+                                </tr>
+                                <tr>
+                                  <th>Subheading 4</th>
+                                  <td>Data 5</td>
+                                  <td>Data 6</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="image left + text block">
+                    <td>
+                      <table class="text-image-block left">
+                        <tr>
+                          <td valign="top" class="image" mc:edit="block_image">
+                            <img src="http://via.placeholder.com/320" width="100%">
+                          </td>
+                          <td valign="top" class="content" mc:edit="block_content">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="image left + table block">
+                    <td>
+                      <table class="table-image-block left">
+                        <tr>
+                          <td valign="top" class="image" mc:edit="block_image">
+                            <img src="http://via.placeholder.com/320" width="100%">
+                          </td>
+                          <td valign="top" class="table" mc:edit="block_content">
+
+                            <table>
+                              <caption>Table Caption</caption>
+                              <thead>
+                                <tr>
+                                  <th>Heading 1</th>
+                                  <th>Heading 2</th>
+                                  <th>Heading 3</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Subheading 1</th>
+                                  <td>Data 1</td>
+                                  <td>Data 2</td>
+                                </tr>
+                                <tr>
+                                  <th>Subheading 2</th>
+                                  <td>Data 3</td>
+                                  <td>Data 4</td>
+                                </tr>
+                                <tr>
+                                  <th>Subheading 4</th>
+                                  <td>Data 5</td>
+                                  <td>Data 6</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="image right + text block">
+                    <td>
+                      <table class="text-image-block right">
+                        <tr>
+                          <td valign="top" class="content" mc:edit="block_content">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="image" mc:edit="block_image">
+                            <img src="http://via.placeholder.com/320" width="100%">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="image right + table block">
+                    <td>
+                      <table class="table-image-block right">
+                        <tr>
+                          <td valign="top" class="table" mc:edit="block_content">
+
+                            <table>
+                              <caption>Table Caption</caption>
+                              <thead>
+                                <tr>
+                                  <th>Heading 1</th>
+                                  <th>Heading 2</th>
+                                  <th>Heading 3</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Subheading 1</th>
+                                  <td>Data 1</td>
+                                  <td>Data 2</td>
+                                </tr>
+                                <tr>
+                                  <th>Subheading 2</th>
+                                  <td>Data 3</td>
+                                  <td>Data 4</td>
+                                </tr>
+                                <tr>
+                                  <th>Subheading 4</th>
+                                  <td>Data 5</td>
+                                  <td>Data 6</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                          <td valign="top" class="image" mc:edit="block_image">
+                            <img src="http://via.placeholder.com/320" width="100%">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="image block" class="image">
+                    <td>
+                      <table class="image-block">
+                        <td valign="top" class="image" mc:edit="block_image">
+                          <img src="http://via.placeholder.com/640x300" width="100%">
+                        </td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table class="cols-2" border="0" cellpadding="0" cellspacing="0" width="100%" mc-hideable="">
+                  <tr mc:repeatable="2-columns" mc:variant="2 items">
+                    <td>
+                      <table class="items-2-2">
+                        <tr>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_1_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_2_image" mc:edit="column_2_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_2_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="2-columns" mc:variant="1 item">
+                    <td>
+                      <table class="items-1-2">
+                        <tr>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_1_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table class="cols-3" border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable="">
+                  <tr mc:repeatable="3-columns" mc:variant="3 items">
+                    <td>
+                      <table class="items-3-3">
+                      <tr>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_1_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_2_image" mc:edit="column_2_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_2_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_3_image" mc:edit="column_3_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_3_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="3-columns" mc:variant="2 items">
+                    <td>
+                      <table class="items-2-3">
+                        <tr>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_1_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_2_image" mc:edit="column_2_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_2_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="3-columns" mc:variant="1 item" class="items-1-3">
+                    <td>
+                      <table class="items-1-3">
+                        <tr>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_1_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table class="cols-4" border="0" cellpadding="0" cellspacing="0" width="100%" mc-hideable="">
+                  <tr mc:repeatable="4-columns" mc:variant="4 items">
+                    <td>
+                      <table class="items-4-4">
+                      <tr>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_1_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_2_image" mc:edit="column_2_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_2_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_3_image" mc:edit="column_3_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_3_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_4_image" mc:edit="column_4_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_4_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="4-columns" mc:variant="3 items">
+                    <td>
+                      <table class="items-3-4">
+                      <tr>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_1_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_2_image" mc:edit="column_2_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_2_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="column">
+                          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="content">
+                                <img src="http://via.placeholder.com/320" mc:label="column_3_image" mc:edit="column_3_image">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top" class="content" mc:edit="column_3_content">
+
+                                <h3>Repeatable Content</h3>
+
+                                <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="4-columns" mc:variant="2 items">
+                    <td>
+                      <table class="items-2-4">
+                        <tr>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_1_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_2_image" mc:edit="column_2_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_2_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="4-columns" mc:variant="1 item" class="items-1-3">
+                    <td>
+                      <table class="items-1-4">
+                        <tr>
+                          <td align="center" valign="top" class="column">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="content">
+                                  <img src="http://via.placeholder.com/320" mc:label="column_1_image" mc:edit="column_1_image">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="content" mc:edit="column_1_content">
+
+                                  <h3>Repeatable Content</h3>
+
+                                  <p><a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.</p>
+
+                                  <p>You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.</p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="footer" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" class="social" mc:edit="footer_social">
+                      
+                      <table>
+                        <tr>
+                          <td>
+                            <a href="*|TWITTER:PROFILEURL|*">
+                              <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" alt="Follow on Twitter" title="Follow on Twitter">
+                            </a>
+                          </td>
+                          <td>
+                            <a href="*|FACEBOOK:PROFILEURL|*">
+                              <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Friend on Facebook" title="Friend on Facebook">
+                            </a>
+                          </td>
+                          <td>
+                            <a href="*|FORWARD|*">
+                              <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" alt="Forward to Friend" title="Forward to Friend">
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="content" mc:edit="footer_content">
+                          
+                      <p><em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved.</em></p>
+                        
+                      <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                      <p>*|LIST:DESCRIPTION|*</p>
+
+                      <p><strong>Our mailing address is:</strong><br>
+                        *|HTML:LIST_ADDRESS_HTML|*</p>
+                      <!-- *|END:IF|* -->
+                      
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table id="postfooter" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top" class="content" mc:edit="postfooter_content">
+                      
+                      <p>Want to change how you receive these emails? You can
+                      <a href="*|UPDATE_PROFILE|*">update your preferences</a> or
+                      <a href="*|UNSUB|*">unsubscribe from this list</a>.</p>
+                      
+                    </td>
+                  </tr>
+                  <!-- *|IF:REWARDS|* -->
+                  <tr>
+                    <td valign="top" class="rewards" mc:edit="postfooter_rewards">
+                      *|HTML:REWARDS|*
+                    </td>
+                  </tr>
+                  <!-- *|END:IF|*-->
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+  </center>
+</body>
+</html>

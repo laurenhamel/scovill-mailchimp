@@ -1,15 +1,31 @@
 /**
- * @tab       3-Column
+ * @tab       3-Columns
  * @section   Background
  * @tip       Set the background color for the email's 3-column area.
  */
 .cols-3 {
   width: 100%;
-  /*@editable*/ background-color: #F4F4F4;
+  /*@editable*/ background-color: white;
 }
 
 /**
- * @tab       3-Column
+ * @tab       Mobile
+ * @section   3-Columns Gutter
+ * @tip       Set the gutter for the 3-column area on smaller screens.
+ */
+.cols-3 {
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    border-collapse: separate !important;
+    /*@editable*/ border-spacing: 20px !important;
+  }
+}
+
+.cols-3 .items-3-3 { width: (100% * (3/3)); }
+.cols-3 .items-2-3 { width: (100% * (2/3)); }
+.cols-3 .items-1-3 { width: (100% * (1/3)); }
+
+/**
+ * @tab       3-Columns
  * @section   Border
  * @tip       Set the border style for the email's 3-column area.
  */
@@ -19,38 +35,76 @@
 }
 
 /**
- * @tab       3-Column
- * @section   Column
- * @tip       Set the column style for the email's 3-column area.
+ * @tab       3-Columns
+ * @section   Gutter
+ * @tip       Set the gutter for the email's 3-column area.
  */
+.cols-3 [class*=" items-"],
+.cols-3 [class^="items-"] {
+  margin: 0 auto;
+  border-collapse: separate !important;
+  /*@editable*/ border-spacing: $column-spacing;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    width: 100% !important;
+    display: block !important;
+    max-width: none !important;
+    border-collapse: collapse !important;
+  }
+  
+}
+
 .cols-3 .column {
   width: (100% / 3); 
   max-width: (100% / 3); 
-  /*@editable*/ padding-top: 20px;
-  /*@editable*/ padding-bottom: 20px;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+  
 }
 
 /**
- * @tab       3-Column
+ * @tab       3-Columns
  * @section   Text
- * @tip       Set the text style for your email's column content text.
+ * @tip       Set the text style for your email's 3-column content text.
  */
 .cols-3 .column .content {
   /*@editable*/ color: #505050;
   /*@editable*/ font-family: $font-body;
   /*@editable*/ font-size: 14px;
   /*@editable*/ line-height: 150%;
-  padding-top: 0;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
   /*@editable*/ text-align: left;
+  padding: 0;
 }
 
 /**
- * @tab       3-Column
+ * @tab       Mobile
+ * @section   3-Column Text
+ * @tip       Make column text larger on smaller screens.
+ */
+.cols-3 .column .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
+ * @tab       3-Columns
+ * @section   Spacing
+ * @tip       Set the spacing between content in the email's 3-column area.
+ */
+.cols-3 .column tr:not(:first-of-type) .content {
+  /*@editable*/ padding-top: $column-spacing;
+}
+
+/**
+ * @tab       3-Columns
  * @section   Links
- * @tip       Set the link styles for your email's column content text.
+ * @tip       Set the link styles for your email's 3-column content text.
  */
 .cols-3 .column .content a, 
 .cols-3 .column .content a:visited, 
@@ -61,7 +115,12 @@
 }
 
 .cols-3 .column img {
-  display: inline;
+  display: block;
   height: auto;
   max-width: 100%;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    width: 100% !important;
+  }
+  
 }

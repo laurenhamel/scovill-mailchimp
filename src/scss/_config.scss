@@ -3,6 +3,10 @@
 $color-blue:          #00306A;
 $color-gray:          #E4E4E4;
 $color-grey:          #E4E4E4;
+$color-grey-medium:   #B9BACE;
+$color-gray-medium:   #B9BACE;
+$color-grey-dark:     #A8A9AD;
+$color-gray-dark:     #A8A9AD;
 
 $color-text-dark:     #333333;
 $color-text-light:    #F4F4F4;
@@ -17,5 +21,11 @@ $layout-max-width: 640px;
 
 /* BREAKPOINTS */
 
-$breakpoint-mobile: 400px;
-$breakpoint-tablet: $layout-max-width;
+$breakpoint-mobile: max-width 480px;
+$breakpoint-tablet: max-width $layout-max-width;
+
+/* COMPONENTS */
+$column-spacing: 20px;
+$image-radius: 10px;
+$table-radius: $image-radius;
+$button-radius: 2px;

@@ -6,7 +6,10 @@
  */
 #preheader {
   width: 100%;
-  /*@editable*/ background-color: #F4F4F4;
+  /*@editable*/ background-color: white;
+  
+  @include breakpoint( $breakpoint-mobile ) { display: none !important; }
+  
 }
 
 /**

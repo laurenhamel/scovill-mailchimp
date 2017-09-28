@@ -2,9 +2,17 @@
   <tr>
     <td valign="top" class="content" mc:edit="postfooter_content">
       
-      <a href="*|UNSUB|*">unsubscribe from this list</a> |
-      <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
+      <p>Want to change how you receive these emails? You can
+      <a href="*|UPDATE_PROFILE|*">update your preferences</a> or
+      <a href="*|UNSUB|*">unsubscribe from this list</a>.</p>
       
     </td>
   </tr>
+  <!-- *|IF:REWARDS|* -->
+  <tr>
+    <td valign="top" class="rewards" mc:edit="postfooter_rewards">
+      *|HTML:REWARDS|*
+    </td>
+  </tr>
+  <!-- *|END:IF|*-->
 </table>
