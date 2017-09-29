@@ -8,8 +8,7 @@
   
   <title>*|MC:SUBJECT|*</title>
   
-  <style>@charset "UTF-8";
-/* VENDORS */
+  <style>/* VENDORS */
 /* UTILITIES */
 /* CONFIGURATIONS */
 /* COLORS */
@@ -95,10 +94,6 @@ img {
   text-decoration: none;
 }
 
-table {
-  border-collapse: collapse !important;
-}
-
 a {
   cursor: pointer;
 }
@@ -112,6 +107,10 @@ h1, h2, h3, h4, h5, h6 {
 * {
   position: relative;
   box-sizing: border-box !important;
+}
+
+#body, #template {
+  border-collapse: collapse !important;
 }
 
 /* EMAIL COMPONENTS */
@@ -189,9 +188,9 @@ body,
   body,
   #body {
     /*@editable*/
-    font-size: 18px;
+    font-size: 18px !important;
     /*@editable*/
-    line-height: 125%;
+    line-height: 125% !important;
   }
 }
 /**
@@ -651,6 +650,74 @@ h4 {
 }
 
 /**
+ * @tab       Mobile
+ * @section   Postheader Text
+ * @tip       Adjust the postheader text style for smaller screens.
+ */
+@media (max-width: 480px) {
+  #postheader .content {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 100% !important;
+    /*@editable*/
+    padding-top: 0;
+    /*@editable*/
+    padding-right: 0;
+    /*@editable*/
+    padding-bottom: 25px;
+    /*@editable*/
+    padding-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  #postheader .content {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 100% !important;
+    /*@editable*/
+    padding-top: 0;
+    /*@editable*/
+    padding-right: 0;
+    /*@editable*/
+    padding-bottom: 25px;
+    /*@editable*/
+    padding-left: 0;
+  }
+}
+
+/**
+ * @tab       Postheader
+ * @section   Text
+ * @tip       Set the text styles for the email's postheader.
+ */
+#postheader .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  padding-top: 0;
+  /*@editable*/
+  padding-right: 0;
+  /*@editable*/
+  padding-bottom: 50px;
+  /*@editable*/
+  padding-left: 0;
+  /*@editable*/
+  text-align: center;
+  /*@editable*/
+  vertical-align: middle;
+}
+
+/**
  * @tab       Postheader
  * @section   Links
  * @tip       Set the link styles for the email's postheader.
@@ -736,9 +803,9 @@ h4 {
 @media (max-width: 480px) {
   .block .text-block .content {
     /*@editable*/
-    font-size: 16px;
+    font-size: 16px !important;
     /*@editable*/
-    line-height: 125%;
+    line-height: 125% !important;
   }
 }
 
@@ -781,9 +848,9 @@ h4 {
 @media (max-width: 480px) {
   .block .table-block .table {
     /*@editable*/
-    font-size: 16px;
+    font-size: 16px !important;
     /*@editable*/
-    line-height: 125%;
+    line-height: 125% !important;
   }
 }
 
@@ -1011,26 +1078,6 @@ h4 {
   background-color: white;
 }
 
-/**
- * @tab       Mobile
- * @section   2-Columns Gutter
- * @tip       Set the gutter for the 2-column area on smaller screens.
- */
-@media (max-width: 480px) {
-  .cols-2 {
-    border-collapse: separate !important;
-    /*@editable*/
-    border-spacing: 20px !important;
-  }
-}
-@media (max-width: 640px) {
-  .cols-2 {
-    border-collapse: separate !important;
-    /*@editable*/
-    border-spacing: 20px !important;
-  }
-}
-
 .cols-2 .items-2-2 {
   width: 100%;
 }
@@ -1082,6 +1129,28 @@ h4 {
   }
 }
 
+/**
+ * @tab       Mobile
+ * @section   2-Column Padding
+ * @tip       Add some padding to columns in the 2-column area on smaller screens.
+ */
+@media (max-width: 480px) {
+  .cols-2 .column {
+    /*@editable*/
+    padding-left: 20px !important;
+    /*@editable*/
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .cols-2 .column {
+    /*@editable*/
+    padding-left: 20px !important;
+    /*@editable*/
+    padding-right: 20px !important;
+  }
+}
+
 .cols-2 .column {
   width: 50%;
   max-width: 50%;
@@ -1128,9 +1197,9 @@ h4 {
 @media (max-width: 480px) {
   .cols-2 .column .content {
     /*@editable*/
-    font-size: 16px;
+    font-size: 16px !important;
     /*@editable*/
-    line-height: 125%;
+    line-height: 125% !important;
   }
 }
 
@@ -1141,7 +1210,7 @@ h4 {
  */
 .cols-2 .column tr:not(:first-of-type) .content {
   /*@editable*/
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 
 /**
@@ -1257,9 +1326,9 @@ h4 {
 @media (max-width: 480px) {
   #footer .content {
     /*@editable*/
-    font-size: 14px;
+    font-size: 14px !important;
     /*@editable*/
-    line-height: 115%;
+    line-height: 115% !important;
   }
 }
 
@@ -1416,19 +1485,10 @@ h4 {
 }
 
 ul {
-  list-style-type: none;
+  list-style-image: url(https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/c100a7c8-be8b-4516-8ba9-6ee71d40abc7.png);
   padding: 0;
   line-height: inherit !important;
-}
-ul li {
-  list-style-type: none;
-}
-ul li::before {
-  content: "◼";
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 10px;
-  color: #00306A;
+  padding-left: 15px;
 }
 
 .button {

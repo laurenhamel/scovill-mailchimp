@@ -65,6 +65,41 @@
 }
 
 /**
+ * @tab       Mobile
+ * @section   Postheader Text
+ * @tip       Adjust the postheader text style for smaller screens.
+ */
+#postheader .content {
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    /*@editable*/ font-size: 20px !important;
+    /*@editable*/ line-height: 100% !important;
+    /*@editable*/ padding-top: 0;
+    /*@editable*/ padding-right: 0;
+    /*@editable*/ padding-bottom: 25px;
+    /*@editable*/ padding-left: 0;
+  }
+}
+
+/**
+ * @tab       Postheader
+ * @section   Text
+ * @tip       Set the text styles for the email's postheader.
+ */
+#postheader .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 20px;
+  /*@editable*/ font-weight: bold;
+  /*@editable*/ line-height: 100%;
+  /*@editable*/ padding-top: 0;
+  /*@editable*/ padding-right: 0;
+  /*@editable*/ padding-bottom: 50px;
+  /*@editable*/ padding-left: 0;
+  /*@editable*/ text-align: center;
+  /*@editable*/ vertical-align: middle;
+}
+
+/**
  * @tab       Postheader
  * @section   Links
  * @tip       Set the link styles for the email's postheader.

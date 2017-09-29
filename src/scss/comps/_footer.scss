@@ -68,8 +68,8 @@
  */
 #footer .content {
   @include breakpoint( $breakpoint-mobile ) {
-    /*@editable*/ font-size: 14px;
-    /*@editable*/ line-height: 115%;
+    /*@editable*/ font-size: 14px !important;
+    /*@editable*/ line-height: 115% !important;
   }
 }
 

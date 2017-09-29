@@ -1,19 +1,6 @@
 ul {
-  list-style-type: none;
+  list-style-image: url(https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/c100a7c8-be8b-4516-8ba9-6ee71d40abc7.png);
   padding: 0;
   line-height: inherit !important;
-  
-  li {
-    list-style-type: none;
-    
-    &::before {
-      content: "◼";
-      display: inline-block;
-      vertical-align: middle;
-      padding-right: 10px;
-      color: $color-blue;
-    }
-    
-  }
-  
+  padding-left: 15px;
 }

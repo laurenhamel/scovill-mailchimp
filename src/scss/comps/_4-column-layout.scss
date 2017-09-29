@@ -8,18 +8,6 @@
   /*@editable*/ background-color: white;
 }
 
-/**
- * @tab       Mobile
- * @section   4-Columns Gutter
- * @tip       Set the gutter for the 4-column area on smaller screens.
- */
-.cols-4 {
-  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
-    border-collapse: separate !important;
-    /*@editable*/ border-spacing: 20px !important;
-  }
-}
-
 .cols-4 .items-4-4 { width: (100% * (4/4)); }
 .cols-4 .items-3-4 { width: (100% * (3/4)); }
 .cols-4 .items-2-4 { width: (100% * (2/4)); }
@@ -55,6 +43,18 @@
   
 }
 
+/**
+ * @tab       Mobile
+ * @section   4-Column Padding
+ * @tip       Add some padding to columns in the 4-column area on smaller screens.
+ */
+.cols-4 .column {
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    /*@editable*/ padding-left: $column-spacing !important;
+    /*@editable*/ padding-right: $column-spacing !important;
+  }
+}
+
 .cols-4 .column {
   width: (100% / 4); 
   max-width: (100% / 4); 
@@ -88,8 +88,8 @@
  */
 .cols-4 .column .content {
   @include breakpoint( $breakpoint-mobile ) {
-    /*@editable*/ font-size: 16px;
-    /*@editable*/ line-height: 125%;
+    /*@editable*/ font-size: 16px !important;
+    /*@editable*/ line-height: 125% !important;
   }
 }
 
@@ -99,7 +99,7 @@
  * @tip       Set the spacing between cell content in the email's 4-column area.
  */
 .cols-4 .column tr:not(:first-of-type) .content {
-  /*@editable*/ padding-top: $column-spacing;
+  /*@editable*/ padding-top: $column-spacing !important;
 }
 
 /**

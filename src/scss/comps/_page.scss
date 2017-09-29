@@ -59,8 +59,8 @@ body,
 @include breakpoint( $breakpoint-mobile ) {
   body,
   #body {
-    /*@editable*/ font-size: 18px;
-    /*@editable*/ line-height: 125%;
+    /*@editable*/ font-size: 18px !important;
+    /*@editable*/ line-height: 125% !important;
   }
 }
 
