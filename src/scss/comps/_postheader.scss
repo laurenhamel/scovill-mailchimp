@@ -117,12 +117,18 @@
  * @section   Image Spacing
  * @tip       Set the spacing between images in the email's postheader.
  */
-#postheader img + img {
+#postheader .image + .image {
   /*@editable*/ margin-left: 20px;
 }
 
-#postheader img {
-  margin: 0 auto;
+#postheader .image {
   display: inline-block;
-  max-width: $layout-max-width;
+  margin: 0 auto;
+}
+
+#postheader img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  width: 100%;
 }

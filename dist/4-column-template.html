@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 * {
-  position: relative;
   box-sizing: border-box !important;
 }
 
@@ -738,15 +737,21 @@ h4 {
  * @section   Image Spacing
  * @tip       Set the spacing between images in the email's postheader.
  */
-#postheader img + img {
+#postheader .image + .image {
   /*@editable*/
   margin-left: 20px;
 }
 
-#postheader img {
-  margin: 0 auto;
+#postheader .image {
   display: inline-block;
-  max-width: 640px;
+  margin: 0 auto;
+}
+
+#postheader img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 /**
@@ -768,7 +773,7 @@ h4 {
   /*@editable*/
   border-top: 1px solid #FFFFFF;
   /*@editable*/
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 /**
@@ -1101,9 +1106,9 @@ h4 {
  */
 .cols-4 {
   /*@editable*/
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #CCCCCC;
   /*@editable*/
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 /**
@@ -1273,7 +1278,7 @@ h4 {
  */
 #footer {
   /*@editable*/
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #CCCCCC;
 }
 
 /**
@@ -1448,6 +1453,7 @@ h4 {
   border: 1px solid black;
   border-top: none;
   border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 .table table th, .table table td, .table table caption {
   padding: 10px;
@@ -1555,9 +1561,15 @@ ul {
                 <table id="postheader" border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable="">
                   <tr>
                     <td valign="top" class="content">
-                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/89a978b0-c66e-4dd6-bfa0-89f431e44e41.png" style="width: 13%; max-width: 75px;" mc:repeatable="brand" mc:variant="Gripper" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="">
-                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/82f24573-5b9a-4c79-9102-08d13f8ab9a0.png" style="width: 13%; max-width: 75px;" mc:repeatable="brand" mc:variant="Duramark" mc:label="postheader_image_2" mc:edit="postheader_image_2" mc:allowdesigner="" mc:allowtext="">
-                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/45e17604-336c-40c4-9de5-ae37a3dc4d86.png" style="width: 13%; max-width: 75px;" mc:repeatable="brand" mc:variant="DOT" mc:label="postheader_image_3" mc:edit="postheader_image_3" mc:allowdesigner="" mc:allowtext="">
+                      <div class="image" mc:repeatable="brand" mc:variant="Gripper" style="width: 13%; max-width: 75px;">
+                        <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/89a978b0-c66e-4dd6-bfa0-89f431e44e41.png" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="">
+                      </div>
+                      <div class="image" mc:repeatable="brand" mc:variant="Duramark" style="width: 13%; max-width: 75px;">
+                        <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/82f24573-5b9a-4c79-9102-08d13f8ab9a0.png" mc:label="postheader_image_2" mc:edit="postheader_image_2" mc:allowdesigner="" mc:allowtext="">
+                      </div>
+                      <div class="image" mc:repeatable="brand" mc:variant="DOT" style="width: 13%; max-width: 75px;">
+                        <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/45e17604-336c-40c4-9de5-ae37a3dc4d86.png" mc:label="postheader_image_3" mc:edit="postheader_image_3" mc:allowdesigner="" mc:allowtext="">
+                      </div>
                     </td>
                   </tr>
                 </table>
@@ -1570,7 +1582,7 @@ ul {
                     <td>
                       <table class="text-block">
                         <tr>
-                          <td valign="top" class="content" mc:edit="block_content">
+                          <td valign="top" class="content" mc:edit="1_block_content">
 
                             <h1>Designing Your Template</h1>
                             <h2>Creating a good-looking email is simple</h2>
@@ -1600,7 +1612,7 @@ ul {
                     <td>
                       <table class="table-block">
                         <tr>
-                          <td valign="top" class="table" mc:edit="block_content">
+                          <td valign="top" class="table" mc:edit="2_block_content">
 
                             <table>
                               <caption>Table Caption</caption>
@@ -1639,10 +1651,10 @@ ul {
                     <td>
                       <table class="text-image-block left">
                         <tr>
-                          <td valign="top" class="image" mc:edit="block_image">
+                          <td valign="top" class="image" mc:edit="3_block_image">
                             <img src="http://via.placeholder.com/320" width="100%">
                           </td>
-                          <td valign="top" class="content" mc:edit="block_content">
+                          <td valign="top" class="content" mc:edit="3_block_content">
 
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -1658,10 +1670,10 @@ ul {
                     <td>
                       <table class="table-image-block left">
                         <tr>
-                          <td valign="top" class="image" mc:edit="block_image">
+                          <td valign="top" class="image" mc:edit="4_block_image">
                             <img src="http://via.placeholder.com/320" width="100%">
                           </td>
-                          <td valign="top" class="table" mc:edit="block_content">
+                          <td valign="top" class="table" mc:edit="4_block_content">
 
                             <table>
                               <caption>Table Caption</caption>
@@ -1700,7 +1712,7 @@ ul {
                     <td>
                       <table class="text-image-block right">
                         <tr>
-                          <td valign="top" class="content" mc:edit="block_content">
+                          <td valign="top" class="content" mc:edit="5_block_content">
 
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -1708,7 +1720,7 @@ ul {
                             <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
 
                           </td>
-                          <td valign="top" class="image" mc:edit="block_image">
+                          <td valign="top" class="image" mc:edit="5_block_image">
                             <img src="http://via.placeholder.com/320" width="100%">
                           </td>
                         </tr>
@@ -1719,7 +1731,7 @@ ul {
                     <td>
                       <table class="table-image-block right">
                         <tr>
-                          <td valign="top" class="table" mc:edit="block_content">
+                          <td valign="top" class="table" mc:edit="6_block_content">
 
                             <table>
                               <caption>Table Caption</caption>
@@ -1750,19 +1762,21 @@ ul {
                             </table>
 
                           </td>
-                          <td valign="top" class="image" mc:edit="block_image">
+                          <td valign="top" class="image" mc:edit="6_block_image">
                             <img src="http://via.placeholder.com/320" width="100%">
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
-                  <tr mc:repeatable="blocks" mc:variant="image block" class="image">
+                  <tr mc:repeatable="blocks" mc:variant="image block">
                     <td>
                       <table class="image-block">
-                        <td valign="top" class="image" mc:edit="block_image">
-                          <img src="http://via.placeholder.com/640x300" width="100%">
-                        </td>
+                        <tr>
+                          <td valign="top" class="image" mc:edit="7_block_image">
+                            <img src="http://via.placeholder.com/640x300" width="100%">
+                          </td>
+                        </tr>
                       </table>
                     </td>
                   </tr>
