@@ -90,7 +90,7 @@
  * @tip       Set the text style for the email's image-and-text blocks.
  * @theme     main
  */
-.block .text-image-block .content {
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .content {
   /*@editable*/ color: #505050;
   /*@editable*/ font-family: $font-body;
   /*@editable*/ font-size: 16px;
@@ -149,7 +149,7 @@
  * @section   Split Block - Text
  * @tip       Make block text larger on smaller screens.
  */
-.block .text-image-block .content {
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .content {
   @include breakpoint( $breakpoint-mobile ) {
     /*@editable*/ font-size: 16px;
     /*@editable*/ line-height: 125%;
@@ -174,7 +174,7 @@
  * @tip       Set the image style for the email's image-and-text blocks.
  * @theme     main
  */
-.block .text-image-block .image,
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
 .block .table-image-block .image {
   /*@editable*/ width: 50%;
   
@@ -189,22 +189,276 @@
 
 /**
  * @tab       Block
- * @section   Image Block - Image
- * @tip       Set the image style for the email's image-only blocks.
+ * @section   Image Block - Full
+ * @tip       Set the image style for the email's image-only, full-image blocks.
  * @theme     main
  */
-.block .image-block .image {
+.block .image-block.full .image {
   /*@editable*/ width: 100%;
 }
 
-.block .text-image-block .image,
+/**
+ * @tab       Block
+ * @section   Half Blocks - Text
+ * @tip       Set the text style for the email's half blocks.
+ * @theme     main
+ */
+.block .text-image-block.halves .image-content,
+.block .text-block.halves .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  /*@editable*/ text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Half Blocks - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+.block .text-image-block.halves .image-content,
+  .block .text-block.halves .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Half Blocks - 1st Item
+ * @tip       Set the image style for the email's half blocks.
+ * @theme     main
+ */
+.block .text-image-block.halves .image-content:nth-child(1),
+.block .text-block.halves .content:nth-child(1) {
+  /*@editable*/ width: 50%;
+}
+
+/**
+ * @tab       Block
+ * @section   Half Blocks - 2nd Item
+ * @tip       Set the image style for the email's half blocks.
+ * @theme     main
+ */
+.block .text-image-block.halves .image-content:nth-child(2),
+.block .text-block.halves .content:nth-child(2) {
+  /*@editable*/ width: 50%;
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - Text
+ * @tip       Set the text style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content,
+.block .text-block.thirds .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  /*@editable*/ text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Third Blocks - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+.block .text-image-block.thirds .image-content,
+  .block .text-block.thirds .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+  
+/**
+ * @tab       Block
+ * @section   Third Blocks - 1st Item
+ * @tip       Set the image style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content:nth-child(1),
+.block .text-block.thirds .content:nth-child(1) {
+  /*@editable*/ width: 33%;
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - 2nd Item
+ * @tip       Set the image style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content:nth-child(2),
+.block .text-block.thirds .content:nth-child(2) {
+  /*@editable*/ width: 33%;
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - 3rd Item
+ * @tip       Set the image style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content:nth-child(3),
+.block .text-block.thirds .content:nth-child(3) {
+  /*@editable*/ width: 33%;
+}
+  
+/**
+ * @tab       Block
+ * @section   Quart Blocks - Text
+ * @tip       Set the text style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content,
+.block .text-block.quarters .content {
+  /*@editable*/ color: #505050;
+  /*@editable*/ font-family: $font-body;
+  /*@editable*/ font-size: 16px;
+  /*@editable*/ line-height: 150%;
+  /*@editable*/ text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Quart Blocks - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+.block .text-image-block.quarters .image-content,
+  .block .text-block.quarters .content {
+  @include breakpoint( $breakpoint-mobile ) {
+    /*@editable*/ font-size: 16px;
+    /*@editable*/ line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 1st Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(1),
+.block .text-block.quarters .content:nth-child(1) {
+  /*@editable*/ width: 25%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 2nd Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(2),
+.block .text-block.quarters .content:nth-child(2) {
+  /*@editable*/ width: 25%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 3rd Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(3),
+.block .text-block.quarters .content:nth-child(3) {
+  /*@editable*/ width: 25%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 4th Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(4),
+.block .text-block.quarters .content:nth-child(4) {
+  /*@editable*/ width: 25%;
+}
+
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
 .block .table-image-block .image,
-.block .image-block .image {
+.block .image-block.full .image,
+.block .text-image-block.halves .image-content,
+.block .text-image-block.thirds .image-content,
+.block .text-image-block.quarters .image-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+}
+
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
+.block .table-image-block .image {
   max-width: 50%;
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    max-width: 100% !important;
+  }
+  
+}
+
+.block .image-block.full .image { 
+  max-width: 100%; 
+}
+
+.block .text-image-block.halves .image-content,
+.block .text-block.halves .content {
+  max-width: 50%;
+  
+  &:nth-child(1) { padding-right: 10px; }
+  &:nth-child(2) { padding-left: 10px; }
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+}
+
+.block .text-image-block.thirds .image-content,
+.block .text-block.thirds .content {
+  max-width: 33%;
+  
+  &:nth-child(1) { padding-right: 7px; }
+  &:nth-child(2) { padding-right: 13px; padding-left: 13px; }
+  &:nth-child(3) { padding-left: 7px; }
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+}
+
+.block .text-image-block.quarters .image-content,
+.block .text-block.quarters .content {
+  max-width: 25%;
+  
+  &:nth-child(1) { padding-right: 5px; }
+  &:nth-child(2) { padding-right: 10px; padding-left: 15px; }
+  &:nth-child(3) { padding-right: 15px; padding-left: 10px; }
+  &:nth-child(4) { padding-left: 5px; }
+  
+  @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
 }
 
 .block .text-image-block.left .image,
@@ -219,9 +473,12 @@
  */
 .block .content a, 
 .block .content a:visited, 
-.block .content a .yshortcuts {
+.block .content a .yshortcuts,
+.block .image-content a, 
+.block .image-content a:visited, 
+.block .image-content a .yshortcuts{
   /*@editable*/ color: $color-blue;
-  /*@editabl e*/ font-weight: normal;
+  /*@editable*/ font-weight: normal;
   /*@editable*/ text-decoration: underline;
 }
 
@@ -236,4 +493,10 @@
     width: 100% !important;
   }
   
+}
+
+.block .text-image-block.halves img,
+.block .text-image-block.thirds img,
+.block .text-image-block.quarters img {
+  margin-bottom: 20px;
 }

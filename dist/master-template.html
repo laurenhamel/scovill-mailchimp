@@ -865,7 +865,7 @@ h4 {
  * @tip       Set the text style for the email's image-and-text blocks.
  * @theme     main
  */
-.block .text-image-block .content {
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .content {
   /*@editable*/
   color: #505050;
   /*@editable*/
@@ -883,14 +883,14 @@ h4 {
   text-align: left;
 }
 @media (max-width: 480px) {
-  .block .text-image-block .content {
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .content {
     display: block !important;
     max-width: 100% !important;
     width: 100% !important;
   }
 }
 @media (max-width: 640px) {
-  .block .text-image-block .content {
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .content {
     display: block !important;
     max-width: 100% !important;
     width: 100% !important;
@@ -955,7 +955,7 @@ h4 {
  * @tip       Make block text larger on smaller screens.
  */
 @media (max-width: 480px) {
-  .block .text-image-block .content {
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .content {
     /*@editable*/
     font-size: 16px;
     /*@editable*/
@@ -983,13 +983,13 @@ h4 {
  * @tip       Set the image style for the email's image-and-text blocks.
  * @theme     main
  */
-.block .text-image-block .image,
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
 .block .table-image-block .image {
   /*@editable*/
   width: 50%;
 }
 @media (max-width: 480px) {
-  .block .text-image-block .image,
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
   .block .table-image-block .image {
     display: block !important;
     width: 100% !important;
@@ -998,7 +998,7 @@ h4 {
   }
 }
 @media (max-width: 640px) {
-  .block .text-image-block .image,
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
   .block .table-image-block .image {
     display: block !important;
     width: 100% !important;
@@ -1009,23 +1009,375 @@ h4 {
 
 /**
  * @tab       Block
- * @section   Image Block - Image
- * @tip       Set the image style for the email's image-only blocks.
+ * @section   Image Block - Full
+ * @tip       Set the image style for the email's image-only, full-image blocks.
  * @theme     main
  */
-.block .image-block .image {
+.block .image-block.full .image {
   /*@editable*/
   width: 100%;
 }
 
-.block .text-image-block .image,
+/**
+ * @tab       Block
+ * @section   Half Blocks - Text
+ * @tip       Set the text style for the email's half blocks.
+ * @theme     main
+ */
+.block .text-image-block.halves .image-content,
+.block .text-block.halves .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Half Blocks - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .text-image-block.halves .image-content,
+  .block .text-block.halves .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Half Blocks - 1st Item
+ * @tip       Set the image style for the email's half blocks.
+ * @theme     main
+ */
+.block .text-image-block.halves .image-content:nth-child(1),
+.block .text-block.halves .content:nth-child(1) {
+  /*@editable*/
+  width: 50%;
+}
+
+/**
+ * @tab       Block
+ * @section   Half Blocks - 2nd Item
+ * @tip       Set the image style for the email's half blocks.
+ * @theme     main
+ */
+.block .text-image-block.halves .image-content:nth-child(2),
+.block .text-block.halves .content:nth-child(2) {
+  /*@editable*/
+  width: 50%;
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - Text
+ * @tip       Set the text style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content,
+.block .text-block.thirds .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Third Blocks - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .text-image-block.thirds .image-content,
+  .block .text-block.thirds .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - 1st Item
+ * @tip       Set the image style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content:nth-child(1),
+.block .text-block.thirds .content:nth-child(1) {
+  /*@editable*/
+  width: 33%;
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - 2nd Item
+ * @tip       Set the image style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content:nth-child(2),
+.block .text-block.thirds .content:nth-child(2) {
+  /*@editable*/
+  width: 33%;
+}
+
+/**
+ * @tab       Block
+ * @section   Third Blocks - 3rd Item
+ * @tip       Set the image style for the email's third blocks.
+ * @theme     main
+ */
+.block .text-image-block.thirds .image-content:nth-child(3),
+.block .text-block.thirds .content:nth-child(3) {
+  /*@editable*/
+  width: 33%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quart Blocks - Text
+ * @tip       Set the text style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content,
+.block .text-block.quarters .content {
+  /*@editable*/
+  color: #505050;
+  /*@editable*/
+  font-family: Trebuchet, sans-serif;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  line-height: 150%;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+ * @tab       Mobile
+ * @section   Quart Blocks - Text
+ * @tip       Make block text larger on smaller screens.
+ */
+@media (max-width: 480px) {
+  .block .text-image-block.quarters .image-content,
+  .block .text-block.quarters .content {
+    /*@editable*/
+    font-size: 16px;
+    /*@editable*/
+    line-height: 125%;
+  }
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 1st Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(1),
+.block .text-block.quarters .content:nth-child(1) {
+  /*@editable*/
+  width: 25%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 2nd Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(2),
+.block .text-block.quarters .content:nth-child(2) {
+  /*@editable*/
+  width: 25%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 3rd Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(3),
+.block .text-block.quarters .content:nth-child(3) {
+  /*@editable*/
+  width: 25%;
+}
+
+/**
+ * @tab       Block
+ * @section   Quarter Blocks - 4th Item
+ * @tip       Set the image style for the email's quarter blocks.
+ * @theme     main
+ */
+.block .text-image-block.quarters .image-content:nth-child(4),
+.block .text-block.quarters .content:nth-child(4) {
+  /*@editable*/
+  width: 25%;
+}
+
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
 .block .table-image-block .image,
-.block .image-block .image {
+.block .image-block.full .image,
+.block .text-image-block.halves .image-content,
+.block .text-image-block.thirds .image-content,
+.block .text-image-block.quarters .image-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+}
+
+.block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
+.block .table-image-block .image {
   max-width: 50%;
+}
+@media (max-width: 480px) {
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
+  .block .table-image-block .image {
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .text-image-block:not(.halves):not(.thirds):not(.quarters) .image,
+  .block .table-image-block .image {
+    display: block !important;
+    max-width: 100% !important;
+  }
+}
+
+.block .image-block.full .image {
+  max-width: 100%;
+}
+
+.block .text-image-block.halves .image-content,
+.block .text-block.halves .content {
+  max-width: 50%;
+}
+.block .text-image-block.halves .image-content:nth-child(1),
+.block .text-block.halves .content:nth-child(1) {
+  padding-right: 10px;
+}
+.block .text-image-block.halves .image-content:nth-child(2),
+.block .text-block.halves .content:nth-child(2) {
+  padding-left: 10px;
+}
+@media (max-width: 480px) {
+  .block .text-image-block.halves .image-content,
+  .block .text-block.halves .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .text-image-block.halves .image-content,
+  .block .text-block.halves .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.block .text-image-block.thirds .image-content,
+.block .text-block.thirds .content {
+  max-width: 33%;
+}
+.block .text-image-block.thirds .image-content:nth-child(1),
+.block .text-block.thirds .content:nth-child(1) {
+  padding-right: 7px;
+}
+.block .text-image-block.thirds .image-content:nth-child(2),
+.block .text-block.thirds .content:nth-child(2) {
+  padding-right: 13px;
+  padding-left: 13px;
+}
+.block .text-image-block.thirds .image-content:nth-child(3),
+.block .text-block.thirds .content:nth-child(3) {
+  padding-left: 7px;
+}
+@media (max-width: 480px) {
+  .block .text-image-block.thirds .image-content,
+  .block .text-block.thirds .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .text-image-block.thirds .image-content,
+  .block .text-block.thirds .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.block .text-image-block.quarters .image-content,
+.block .text-block.quarters .content {
+  max-width: 25%;
+}
+.block .text-image-block.quarters .image-content:nth-child(1),
+.block .text-block.quarters .content:nth-child(1) {
+  padding-right: 5px;
+}
+.block .text-image-block.quarters .image-content:nth-child(2),
+.block .text-block.quarters .content:nth-child(2) {
+  padding-right: 10px;
+  padding-left: 15px;
+}
+.block .text-image-block.quarters .image-content:nth-child(3),
+.block .text-block.quarters .content:nth-child(3) {
+  padding-right: 15px;
+  padding-left: 10px;
+}
+.block .text-image-block.quarters .image-content:nth-child(4),
+.block .text-block.quarters .content:nth-child(4) {
+  padding-left: 5px;
+}
+@media (max-width: 480px) {
+  .block .text-image-block.quarters .image-content,
+  .block .text-block.quarters .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 640px) {
+  .block .text-image-block.quarters .image-content,
+  .block .text-block.quarters .content {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 .block .text-image-block.left .image,
@@ -1045,10 +1397,13 @@ h4 {
  */
 .block .content a,
 .block .content a:visited,
-.block .content a .yshortcuts {
+.block .content a .yshortcuts,
+.block .image-content a,
+.block .image-content a:visited,
+.block .image-content a .yshortcuts {
   /*@editable*/
   color: #00306A;
-  /*@editabl e*/
+  /*@editable*/
   font-weight: normal;
   /*@editable*/
   text-decoration: underline;
@@ -1070,6 +1425,12 @@ h4 {
   .block img {
     width: 100% !important;
   }
+}
+
+.block .text-image-block.halves img,
+.block .text-image-block.thirds img,
+.block .text-image-block.quarters img {
+  margin-bottom: 20px;
 }
 
 /**
@@ -2129,12 +2490,222 @@ ul {
                       </table>
                     </td>
                   </tr>
-                  <tr mc:repeatable="blocks" mc:variant="image block">
+                  <tr mc:repeatable="blocks" mc:variant="full image block">
                     <td>
-                      <table class="image-block">
+                      <table class="image-block full">
                         <tr>
                           <td valign="top" class="image" mc:edit="7_block_image">
                             <img src="http://via.placeholder.com/640x300" width="100%">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="half image + text block">
+                    <td>
+                      <table class="text-image-block halves">
+                        <tr>
+                          <td valign="top" class="image-content" mc:edit="8_block_image_content_1">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                          <td valign="top" class="image-content" mc:edit="8_block_image_content_2">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="half text block">
+                    <td>
+                      <table class="text-block halves">
+                        <tr>
+                          <td valign="top" class="content" mc:edit="9_block_content_1">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="content" mc:edit="9_block_content_2">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="third image + text block">
+                    <td>
+                      <table class="text-image-block thirds">
+                        <tr>
+                          <td valign="top" class="image-content" mc:edit="10_block_image_content_1">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                          <td valign="top" class="image-content" mc:edit="10_block_image_content_2">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                          <td valign="top" class="image-content" mc:edit="10_block_image_content_3">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="third text block">
+                    <td>
+                      <table class="text-block thirds">
+                        <tr>
+                          <td valign="top" class="content" mc:edit="11_block_content_1">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="content" mc:edit="11_block_content_2">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="content" mc:edit="11_block_content_3">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="quarter image + text block">
+                    <td>
+                      <table class="text-image-block quarters">
+                        <tr>
+                          <td valign="top" class="image-content" mc:edit="12_block_image_content_1">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                          <td valign="top" class="image-content" mc:edit="12_block_image_content_2">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                          <td valign="top" class="image-content" mc:edit="12_block_image_content_3">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                          <td valign="top" class="image-content" mc:edit="12_block_image_content_4">
+                            
+                            <img src="http://via.placeholder.com/320" width="100%">
+                            
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable="blocks" mc:variant="quarter text block">
+                    <td>
+                      <table class="text-block quarters">
+                        <tr>
+                          <td valign="top" class="content" mc:edit="13_block_content_1">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="content" mc:edit="13_block_content_2">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="content" mc:edit="13_block_content_3">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
+                          </td>
+                          <td valign="top" class="content" mc:edit="13_block_content_4">
+
+                            <h3>Styling Your Content</h3>
+                            <h4>Make your email easy to read</h4>
+
+                            <p>After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.</p>
+
                           </td>
                         </tr>
                       </table>
