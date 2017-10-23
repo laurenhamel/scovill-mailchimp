@@ -112,23 +112,9 @@
   /*@editable*/ text-decoration: underline;
 }
 
-/**
- * @tab       Postheader
- * @section   Image Spacing
- * @tip       Set the spacing between images in the email's postheader.
- */
-#postheader .image + .image {
-  /*@editable*/ margin-left: 20px;
-}
-
-#postheader .image {
-  display: inline-block;
-  margin: 0 auto;
-}
-
 #postheader img {
   max-height: 100%;
   max-width: 100%;
   display: block;
-  width: 100%;
+  width: 100% !important;
 }

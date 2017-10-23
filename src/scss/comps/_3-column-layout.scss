@@ -22,22 +22,15 @@
   /*@editable*/ border-bottom: 1px solid #FFFFFF;
 }
 
-/**
- * @tab       3-Columns
- * @section   Gutter
- * @tip       Set the gutter for the email's 3-column area.
- */
 .cols-3 [class*=" items-"],
 .cols-3 [class^="items-"] {
   margin: 0 auto;
   border-collapse: separate !important;
-  /*@editable*/ border-spacing: $column-spacing;
   
   @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
   
 }
@@ -49,19 +42,41 @@
  */
 .cols-3 .column {
   @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
-    /*@editable*/ padding-left: $column-spacing !important;
-    /*@editable*/ padding-right: $column-spacing !important;
+    /*@editable*/ padding-left: 0 !important;
+    /*@editable*/ padding-right: 0 !important;
   }
 }
 
 .cols-3 .column {
   width: (100% / 3); 
   max-width: (100% / 3); 
+  padding-left: $column-spacing / 2;
+  padding-right: $column-spacing / 2;
+  
+  &:first-child { padding-left: 0; }
+  &:last-child { padding-right: 0; }
   
   @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
     width: 100% !important;
     display: block !important;
     max-width: 100% !important;
+  }
+  
+}
+
+.cols-3 {
+  
+  $s: $column-spacing;
+  
+  .items-3-3 {
+    .column:nth-child(1) { padding-right: $s * .7; }
+    .column:nth-child(2) { padding-left: $s * .3; padding-right: $s * .3; }
+    .column:nth-child(3) { padding-left: $s * .7; }
+  }
+  
+  .items-2-3 {
+    .column:nth-child(1) { padding-right: $s * .5; }
+    .column:nth-child(2) { padding-left: $s * .5; }
   }
   
 }
@@ -97,7 +112,7 @@
  * @section   Spacing
  * @tip       Set the spacing between content in the email's 3-column area.
  */
-.cols-3 .column tr:not(:first-of-type) .content {
+.cols-3 .column .content.text {
   /*@editable*/ padding-top: $column-spacing !important;
 }
 

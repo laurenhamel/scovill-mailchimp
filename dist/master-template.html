@@ -108,8 +108,13 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box !important;
 }
 
-#body, #template {
+#body,
+#template {
   border-collapse: collapse !important;
+}
+
+table {
+  margin: 0 auto !important;
 }
 
 /* EMAIL COMPONENTS */
@@ -157,6 +162,7 @@ body,
 #template {
   /*@editable*/
   border: none;
+  width: 100% !important;
 }
 
 /**
@@ -543,7 +549,7 @@ h4 {
   margin: 0 auto;
   display: block;
   height: auto;
-  width: 100%;
+  width: 100% !important;
   max-width: 640px;
 }
 
@@ -732,26 +738,11 @@ h4 {
   text-decoration: underline;
 }
 
-/**
- * @tab       Postheader
- * @section   Image Spacing
- * @tip       Set the spacing between images in the email's postheader.
- */
-#postheader .image + .image {
-  /*@editable*/
-  margin-left: 20px;
-}
-
-#postheader .image {
-  display: inline-block;
-  margin: 0 auto;
-}
-
 #postheader img {
   max-height: 100%;
   max-width: 100%;
   display: block;
-  width: 100%;
+  width: 100% !important;
 }
 
 /**
@@ -1464,17 +1455,10 @@ h4 {
   border-bottom: 1px solid #FFFFFF;
 }
 
-/**
- * @tab       2-Columns
- * @section   Gutter
- * @tip       Set the gutter for the email's 2-column area.
- */
 .cols-2 [class*=" items-"],
 .cols-2 [class^="items-"] {
   margin: 0 auto;
   border-collapse: separate !important;
-  /*@editable*/
-  border-spacing: 20px;
 }
 @media (max-width: 480px) {
   .cols-2 [class*=" items-"],
@@ -1482,7 +1466,6 @@ h4 {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
 }
 @media (max-width: 640px) {
@@ -1491,7 +1474,6 @@ h4 {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
 }
 
@@ -1503,23 +1485,31 @@ h4 {
 @media (max-width: 480px) {
   .cols-2 .column {
     /*@editable*/
-    padding-left: 20px !important;
+    padding-left: 0 !important;
     /*@editable*/
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
 }
 @media (max-width: 640px) {
   .cols-2 .column {
     /*@editable*/
-    padding-left: 20px !important;
+    padding-left: 0 !important;
     /*@editable*/
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
 }
 
 .cols-2 .column {
   width: 50%;
   max-width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cols-2 .column:first-child {
+  padding-left: 0;
+}
+.cols-2 .column:last-child {
+  padding-right: 0;
 }
 @media (max-width: 480px) {
   .cols-2 .column {
@@ -1574,7 +1564,7 @@ h4 {
  * @section   Cell Spacing
  * @tip       Set the spacing between cell content in the email's 2-column area.
  */
-.cols-2 .column tr:not(:first-of-type) .content {
+.cols-2 .column .content.text {
   /*@editable*/
   padding-top: 20px !important;
 }
@@ -1646,17 +1636,10 @@ h4 {
   border-bottom: 1px solid #FFFFFF;
 }
 
-/**
- * @tab       3-Columns
- * @section   Gutter
- * @tip       Set the gutter for the email's 3-column area.
- */
 .cols-3 [class*=" items-"],
 .cols-3 [class^="items-"] {
   margin: 0 auto;
   border-collapse: separate !important;
-  /*@editable*/
-  border-spacing: 20px;
 }
 @media (max-width: 480px) {
   .cols-3 [class*=" items-"],
@@ -1664,7 +1647,6 @@ h4 {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
 }
 @media (max-width: 640px) {
@@ -1673,7 +1655,6 @@ h4 {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
 }
 
@@ -1685,23 +1666,31 @@ h4 {
 @media (max-width: 480px) {
   .cols-3 .column {
     /*@editable*/
-    padding-left: 20px !important;
+    padding-left: 0 !important;
     /*@editable*/
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
 }
 @media (max-width: 640px) {
   .cols-3 .column {
     /*@editable*/
-    padding-left: 20px !important;
+    padding-left: 0 !important;
     /*@editable*/
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
 }
 
 .cols-3 .column {
   width: 33.3333333333%;
   max-width: 33.3333333333%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cols-3 .column:first-child {
+  padding-left: 0;
+}
+.cols-3 .column:last-child {
+  padding-right: 0;
 }
 @media (max-width: 480px) {
   .cols-3 .column {
@@ -1716,6 +1705,23 @@ h4 {
     display: block !important;
     max-width: 100% !important;
   }
+}
+
+.cols-3 .items-3-3 .column:nth-child(1) {
+  padding-right: 14px;
+}
+.cols-3 .items-3-3 .column:nth-child(2) {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.cols-3 .items-3-3 .column:nth-child(3) {
+  padding-left: 14px;
+}
+.cols-3 .items-2-3 .column:nth-child(1) {
+  padding-right: 10px;
+}
+.cols-3 .items-2-3 .column:nth-child(2) {
+  padding-left: 10px;
 }
 
 /**
@@ -1756,7 +1762,7 @@ h4 {
  * @section   Spacing
  * @tip       Set the spacing between content in the email's 3-column area.
  */
-.cols-3 .column tr:not(:first-of-type) .content {
+.cols-3 .column .content.text {
   /*@editable*/
   padding-top: 20px !important;
 }
@@ -1832,17 +1838,10 @@ h4 {
   border-bottom: 1px solid #FFFFFF;
 }
 
-/**
- * @tab       4-Columns
- * @section   Gutter
- * @tip       Set the inner gutter for the email's 4-column area.
- */
 .cols-4 [class*=" items-"],
 .cols-4 [class^="items-"] {
   margin: 0 auto;
   border-collapse: separate !important;
-  /*@editable*/
-  border-spacing: 20px;
 }
 @media (max-width: 480px) {
   .cols-4 [class*=" items-"],
@@ -1850,7 +1849,6 @@ h4 {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
 }
 @media (max-width: 640px) {
@@ -1859,7 +1857,6 @@ h4 {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
 }
 
@@ -1871,23 +1868,31 @@ h4 {
 @media (max-width: 480px) {
   .cols-4 .column {
     /*@editable*/
-    padding-left: 20px !important;
+    padding-left: 0 !important;
     /*@editable*/
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
 }
 @media (max-width: 640px) {
   .cols-4 .column {
     /*@editable*/
-    padding-left: 20px !important;
+    padding-left: 0 !important;
     /*@editable*/
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
 }
 
 .cols-4 .column {
   width: 25%;
   max-width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cols-4 .column:first-child {
+  padding-left: 0;
+}
+.cols-4 .column:last-child {
+  padding-right: 0;
 }
 @media (max-width: 480px) {
   .cols-4 .column {
@@ -1902,6 +1907,37 @@ h4 {
     display: block !important;
     max-width: 100% !important;
   }
+}
+
+.cols-4 .items-4-4 .column:nth-child(1) {
+  padding-right: 15px;
+}
+.cols-4 .items-4-4 .column:nth-child(2) {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.cols-4 .items-4-4 .column:nth-child(3) {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.cols-4 .items-4-4 .column:nth-child(4) {
+  padding-left: 15px;
+}
+.cols-4 .items-3-4 .column:nth-child(1) {
+  padding-right: 14px;
+}
+.cols-4 .items-3-4 .column:nth-child(2) {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.cols-4 .items-3-4 .column:nth-child(3) {
+  padding-left: 14px;
+}
+.cols-4 .items-2-4 .column:nth-child(1) {
+  padding-right: 10px;
+}
+.cols-4 .items-2-4 .column:nth-child(2) {
+  padding-left: 10px;
 }
 
 /**
@@ -1942,7 +1978,7 @@ h4 {
  * @section   Cell Spacing
  * @tip       Set the spacing between cell content in the email's 4-column area.
  */
-.cols-4 .column tr:not(:first-of-type) .content {
+.cols-4 .column .content.text {
   /*@editable*/
   padding-top: 20px !important;
 }
@@ -2248,7 +2284,7 @@ ul {
     <table id="body" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" align="center">
       <tr>
         <td id="wrapper" align="center" valign="top">
-          <table id="template" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <table id="template" border="0" cellpadding="0" cellspacing="0" width="640">
             <tr>
               <td align="center" valign="top">
                 <table id="preheader" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -2271,7 +2307,7 @@ ul {
                 <table id="header" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
                     <td valign="top" class="content">
-                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/ce310b0e-350f-49e4-bab1-676e36509549.png" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
+                      <img class="image" src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/ce310b0e-350f-49e4-bab1-676e36509549.png" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="" width="640">
                     </td>
                   </tr>
                 </table>
@@ -2282,15 +2318,40 @@ ul {
                 <table id="postheader" border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable="">
                   <tr>
                     <td valign="top" class="content">
-                      <div class="image" mc:repeatable="brand" mc:variant="Gripper" style="width: 13%; max-width: 75px;">
-                        <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/89a978b0-c66e-4dd6-bfa0-89f431e44e41.png" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="">
-                      </div>
-                      <div class="image" mc:repeatable="brand" mc:variant="Duramark" style="width: 13%; max-width: 75px;">
-                        <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/82f24573-5b9a-4c79-9102-08d13f8ab9a0.png" mc:label="postheader_image_2" mc:edit="postheader_image_2" mc:allowdesigner="" mc:allowtext="">
-                      </div>
-                      <div class="image" mc:repeatable="brand" mc:variant="DOT" style="width: 13%; max-width: 75px;">
-                        <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/45e17604-336c-40c4-9de5-ae37a3dc4d86.png" mc:label="postheader_image_3" mc:edit="postheader_image_3" mc:allowdesigner="" mc:allowtext="">
-                      </div>
+                      <table cellspacing="20" cellpadding="0" mc:repeatable="brand" mc:variant="Big 3" style="width: 55%;">
+                        <tr>
+                          <td class="image" style="max-width: 75px; min-width: 40px;">
+                            <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/89a978b0-c66e-4dd6-bfa0-89f431e44e41.png" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="" width="75">
+                          </td>
+                          <td class="image" style="max-width: 75px; min-width: 40px;">
+                            <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/82f24573-5b9a-4c79-9102-08d13f8ab9a0.png" mc:label="postheader_image_2" mc:edit="postheader_image_2" mc:allowdesigner="" mc:allowtext="" width="75">
+                          </td>
+                          <td class="image" style="max-width: 75px; min-width: 40px;">
+                            <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/45e17604-336c-40c4-9de5-ae37a3dc4d86.png" mc:label="postheader_image_3" mc:edit="postheader_image_3" mc:allowdesigner="" mc:allowtext="" width="75">
+                          </td>
+                        </tr>
+                      </table>
+                      <table cellspacing="20" cellpadding="0" mc:repeatable="brand" mc:variant="Gripper" style="width: 20%;">
+                        <tr>
+                          <td class="image" style="max-width: 75px; min-width: 40px;">
+                            <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/89a978b0-c66e-4dd6-bfa0-89f431e44e41.png" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="" width="75">
+                          </td>
+                        </tr>
+                      </table>
+                      <table cellspacing="20" cellpadding="0" mc:repeatable="brand" mc:variant="Duramark" style="width: 20%;">
+                        <tr>
+                          <td class="image" style="max-width: 75px; min-width: 40px;">
+                            <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/82f24573-5b9a-4c79-9102-08d13f8ab9a0.png" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="" width="75">
+                          </td>
+                        </tr>
+                      </table>
+                      <table cellspacing="20" cellpadding="0" mc:repeatable="brand" mc:variant="DOT" style="width: 20%;">
+                        <tr>
+                          <td class="image" style="max-width: 75px; min-width: 40px;">
+                            <img src="https://gallery.mailchimp.com/d803970745fcd654d4b47cb49/images/45e17604-336c-40c4-9de5-ae37a3dc4d86.png" mc:label="postheader_image_1" mc:edit="postheader_image_1" mc:allowdesigner="" mc:allowtext="" width="75">
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -2322,7 +2383,7 @@ ul {
                               <li>List Item 4</li>
                             </ul>
                             
-                            <a href="#" class="button" style="width: 150px;">Learn More</a>
+                            <a href="http://scovill.com" class="button" style="width: 150px;">Learn More</a>
 
                           </td>
                         </tr>
@@ -2373,7 +2434,7 @@ ul {
                       <table class="text-image-block left">
                         <tr>
                           <td valign="top" class="image" mc:edit="3_block_image">
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                           </td>
                           <td valign="top" class="content" mc:edit="3_block_content">
 
@@ -2392,7 +2453,7 @@ ul {
                       <table class="table-image-block left">
                         <tr>
                           <td valign="top" class="image" mc:edit="4_block_image">
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                           </td>
                           <td valign="top" class="table" mc:edit="4_block_content">
 
@@ -2442,7 +2503,7 @@ ul {
 
                           </td>
                           <td valign="top" class="image" mc:edit="5_block_image">
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                           </td>
                         </tr>
                       </table>
@@ -2484,7 +2545,7 @@ ul {
 
                           </td>
                           <td valign="top" class="image" mc:edit="6_block_image">
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                           </td>
                         </tr>
                       </table>
@@ -2495,7 +2556,7 @@ ul {
                       <table class="image-block full">
                         <tr>
                           <td valign="top" class="image" mc:edit="7_block_image">
-                            <img src="http://via.placeholder.com/640x300" width="100%">
+                            <img src="http://via.placeholder.com/640x300">
                           </td>
                         </tr>
                       </table>
@@ -2507,7 +2568,7 @@ ul {
                         <tr>
                           <td valign="top" class="image-content" mc:edit="8_block_image_content_1">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2517,7 +2578,7 @@ ul {
                           </td>
                           <td valign="top" class="image-content" mc:edit="8_block_image_content_2">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2559,7 +2620,7 @@ ul {
                         <tr>
                           <td valign="top" class="image-content" mc:edit="10_block_image_content_1">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2569,7 +2630,7 @@ ul {
                           </td>
                           <td valign="top" class="image-content" mc:edit="10_block_image_content_2">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2579,7 +2640,7 @@ ul {
                           </td>
                           <td valign="top" class="image-content" mc:edit="10_block_image_content_3">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2629,7 +2690,7 @@ ul {
                         <tr>
                           <td valign="top" class="image-content" mc:edit="12_block_image_content_1">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2639,7 +2700,7 @@ ul {
                           </td>
                           <td valign="top" class="image-content" mc:edit="12_block_image_content_2">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2649,7 +2710,7 @@ ul {
                           </td>
                           <td valign="top" class="image-content" mc:edit="12_block_image_content_3">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2659,7 +2720,7 @@ ul {
                           </td>
                           <td valign="top" class="image-content" mc:edit="12_block_image_content_4">
                             
-                            <img src="http://via.placeholder.com/320" width="100%">
+                            <img src="http://via.placeholder.com/320">
                             
                             <h3>Styling Your Content</h3>
                             <h4>Make your email easy to read</h4>
@@ -2716,7 +2777,7 @@ ul {
             </tr>
             <tr>
               <td align="center" valign="top">
-                <table class="cols-2" border="0" cellpadding="0" cellspacing="0" width="100%" mc-hideable="">
+                <table class="cols-2" border="0" cellpadding="0" cellspacing="20" width="100%" mc-hideable="">
                   <tr mc:repeatable="2-columns" mc:variant="2 items">
                     <td>
                       <table class="items-2-2">
@@ -2729,7 +2790,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_1_content">
+                                <td valign="top" class="content text" mc:edit="column_1_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -2749,7 +2810,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_2_content">
+                                <td valign="top" class="content text" mc:edit="column_2_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -2777,7 +2838,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_1_content">
+                                <td valign="top" class="content text" mc:edit="column_1_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -2798,7 +2859,7 @@ ul {
             </tr>
             <tr>
               <td align="center" valign="top">
-                <table class="cols-3" border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable="">
+                <table class="cols-3" border="0" cellpadding="0" cellspacing="20" width="100%" mc:hideable="">
                   <tr mc:repeatable="3-columns" mc:variant="3 items">
                     <td>
                       <table class="items-3-3">
@@ -2811,7 +2872,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_1_content">
+                              <td valign="top" class="content text" mc:edit="column_1_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -2831,7 +2892,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_2_content">
+                              <td valign="top" class="content text" mc:edit="column_2_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -2851,7 +2912,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_3_content">
+                              <td valign="top" class="content text" mc:edit="column_3_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -2879,7 +2940,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_1_content">
+                                <td valign="top" class="content text" mc:edit="column_1_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -2899,7 +2960,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_2_content">
+                                <td valign="top" class="content text" mc:edit="column_2_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -2927,7 +2988,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_1_content">
+                                <td valign="top" class="content text" mc:edit="column_1_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -2948,7 +3009,7 @@ ul {
             </tr>
             <tr>
               <td align="center" valign="top">
-                <table class="cols-4" border="0" cellpadding="0" cellspacing="0" width="100%" mc-hideable="">
+                <table class="cols-4" border="0" cellpadding="0" cellspacing="20" width="100%" mc-hideable="">
                   <tr mc:repeatable="4-columns" mc:variant="4 items">
                     <td>
                       <table class="items-4-4">
@@ -2961,7 +3022,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_1_content">
+                              <td valign="top" class="content text" mc:edit="column_1_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -2981,7 +3042,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_2_content">
+                              <td valign="top" class="content text" mc:edit="column_2_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -3001,7 +3062,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_3_content">
+                              <td valign="top" class="content text" mc:edit="column_3_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -3021,7 +3082,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_4_content">
+                              <td valign="top" class="content text" mc:edit="column_4_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -3049,7 +3110,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_1_content">
+                              <td valign="top" class="content text" mc:edit="column_1_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -3069,7 +3130,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_2_content">
+                              <td valign="top" class="content text" mc:edit="column_2_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -3089,7 +3150,7 @@ ul {
                               </td>
                             </tr>
                             <tr>
-                              <td valign="top" class="content" mc:edit="column_3_content">
+                              <td valign="top" class="content text" mc:edit="column_3_content">
 
                                 <h3>Repeatable Content</h3>
 
@@ -3117,7 +3178,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_1_content">
+                                <td valign="top" class="content text" mc:edit="column_1_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -3137,7 +3198,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_2_content">
+                                <td valign="top" class="content text" mc:edit="column_2_content">
 
                                   <h3>Repeatable Content</h3>
 
@@ -3165,7 +3226,7 @@ ul {
                                 </td>
                               </tr>
                               <tr>
-                                <td valign="top" class="content" mc:edit="column_1_content">
+                                <td valign="top" class="content text" mc:edit="column_1_content">
 
                                   <h3>Repeatable Content</h3>
 

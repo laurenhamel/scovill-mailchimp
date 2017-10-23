@@ -23,22 +23,15 @@
   /*@editable*/ border-bottom: 1px solid #FFFFFF;
 }
 
-/**
- * @tab       4-Columns
- * @section   Gutter
- * @tip       Set the inner gutter for the email's 4-column area.
- */
 .cols-4 [class*=" items-"],
 .cols-4 [class^="items-"] {
   margin: 0 auto;
   border-collapse: separate !important;
-  /*@editable*/ border-spacing: $column-spacing;
   
   @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
     width: 100% !important;
     display: block !important;
     max-width: none !important;
-    border-collapse: collapse !important;
   }
   
 }
@@ -50,19 +43,48 @@
  */
 .cols-4 .column {
   @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
-    /*@editable*/ padding-left: $column-spacing !important;
-    /*@editable*/ padding-right: $column-spacing !important;
+    /*@editable*/ padding-left: 0 !important;
+    /*@editable*/ padding-right: 0 !important;
   }
 }
 
 .cols-4 .column {
   width: (100% / 4); 
   max-width: (100% / 4); 
+  padding-left: $column-spacing / 2;
+  padding-right: $column-spacing / 2;
+  
+  &:first-child { padding-left: 0; }
+  &:last-child { padding-right: 0; }
   
   @include multi-breakpoint( $breakpoint-mobile, $breakpoint-tablet ) {
     width: 100% !important;
     display: block !important;
     max-width: 100% !important;
+  }
+  
+}
+
+.cols-4 {
+  
+  $s: $column-spacing;
+  
+  .items-4-4 {
+    .column:nth-child(1) { padding-right: $s * .75; }
+    .column:nth-child(2) { padding-left: $s * .25; padding-right: $s * .5; }
+    .column:nth-child(3) { padding-left: $s * .5; padding-right: $s * .25; }
+    .column:nth-child(4) { padding-left: $s * .75; }
+  }
+  
+  .items-3-4 {
+    .column:nth-child(1) { padding-right: $s * .7;}
+    .column:nth-child(2) { padding-left: $s * .3; padding-right: $s * .3;}
+    .column:nth-child(3) { padding-left: $s * .7;}
+  }
+  
+  .items-2-4 {
+    .column:nth-child(1) { padding-right: $s * .5; }
+    .column:nth-child(2) { padding-left: $s * .5; }
   }
   
 }
@@ -98,7 +120,7 @@
  * @section   Cell Spacing
  * @tip       Set the spacing between cell content in the email's 4-column area.
  */
-.cols-4 .column tr:not(:first-of-type) .content {
+.cols-4 .column .content.text {
   /*@editable*/ padding-top: $column-spacing !important;
 }
 
